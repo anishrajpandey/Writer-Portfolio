@@ -18,7 +18,11 @@ import { useState } from "react";
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   return (
-    <nav className="flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-16 border-b-violet-50">
+    <nav
+      className={
+        "flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-16 "
+      }
+    >
       <div className="logoContainer flex items-center p-2">
         <div className="relative w-12 h-12 pb-4">
           <Image src={"/logo.svg"} fill alt="logo" />
@@ -27,7 +31,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className=" sm:hidden self-end h-full flex items-center"
+        className=" sm:hidden self-end h-full flex items-center fixed -top-56 right-6 z-50"
         onClick={() => {
           setShowNavbar(!showNavbar);
         }}
@@ -36,7 +40,7 @@ const Navbar = () => {
       </div>
       <ul
         className={cn(
-          "flex flex-col text-sm font-semibold absolute -left-full px-4 pt-8 sm:pt-0 sm:px-12 top-16  sm:w-fit sm:inset-0 bg-blue-primary w-screen sm:bg-transparent sm:relative sm:flex-row gap-4 h-full sm:items-center transition duration-100 min-w-fit mobileNav",
+          "flex flex-col text-sm font-semibold fixed -left-full px-4 pt-8 sm:pt-0 sm:px-12 top-0  sm:w-fit sm:inset-0 bg-blue-primary z-20 w-screen sm:bg-transparent sm:relative sm:flex-row gap-4 h-full sm:items-center transition duration-100 min-w-fit mobileNav",
           {
             "left-0": showNavbar,
           }
