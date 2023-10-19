@@ -19,7 +19,7 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   return (
     <nav className="flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-16 border-b-violet-50">
-      <div className="logoContainer flex items-center">
+      <div className="logoContainer flex items-center p-2">
         <div className="relative w-12 h-12 pb-4">
           <Image src={"/logo.svg"} fill alt="logo" />
         </div>
