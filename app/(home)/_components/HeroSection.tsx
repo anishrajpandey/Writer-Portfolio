@@ -20,9 +20,21 @@ export default function HeroSection() {
           {/* <Image src={"/book1.jpg"} fill alt="book" /> */}
 
           <Canvas>
-            <mesh rotation-x={1.3}>
+            <mesh
+              rotation-x={Math.PI / 2}
+              rotation-z={Math.PI / 2}
+              // translateOnAxis={}
+            >
               <ambientLight intensity={1.25} />
-              <OrbitControls />
+              <OrbitControls
+                autoRotate
+                rotation={[0, -1, 0]}
+                rotateSpeed={2}
+                // minAzimuthAngle={-Math.PI / 4}
+                // maxAzimuthAngle={Math.PI / 4}
+                minPolarAngle={Math.PI / 2}
+                maxPolarAngle={Math.PI - Math.PI / 2}
+              />
               {/* <boxGeometry /> */}
               <Suspense fallback={null}>
                 <BookModel />
