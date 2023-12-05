@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { Canvas, useThree } from "@react-three/fiber";
+import { CameraControls, Environment, OrbitControls } from "@react-three/drei";
 
 import BookModel from "./BookModel";
 
@@ -16,22 +16,29 @@ export default function HeroSection() {
         laudantium error!
       </div>
       <div className="right w-screen md:w-2/5 h-full flex items-center ">
-        <div className="relative w-full mix-blend-darken aspect-square">
+        <div className=" w-full  aspect-squareflex justify-center items-center relative">
           {/* <Image src={"/book1.jpg"} fill alt="book" /> */}
-
-          <Canvas>
+          <Canvas
+            className="h-2xl w-2xl"
+            camera={{
+              fov: 100,
+              near: 1,
+              far: 334,
+              position: [13, 30, 0],
+            }}
+          >
             <mesh
               rotation-x={Math.PI / 2}
               rotation-z={Math.PI / 2}
+
               // translateOnAxis={}
             >
+              <pointLight position={[10, 10, 10]} />
               <ambientLight intensity={1.25} />
               <OrbitControls
                 autoRotate
-                rotation={[0, -1, 0]}
+                rotation={[0, 1, 0]}
                 rotateSpeed={2}
-                // minAzimuthAngle={-Math.PI / 4}
-                // maxAzimuthAngle={Math.PI / 4}
                 minPolarAngle={Math.PI / 2}
                 maxPolarAngle={Math.PI - Math.PI / 2}
               />
@@ -44,6 +51,7 @@ export default function HeroSection() {
               <meshLambertMaterial />
             </mesh>
           </Canvas>
+
           {/* todo replace image wth a 3d model */}
         </div>
       </div>
