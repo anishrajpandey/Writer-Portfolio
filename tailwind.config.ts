@@ -17,10 +17,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        "orange-primary": "#D65108",
-        "orange-secondary": "#EFA00B",
-        "blue-primary": "#0267c1",
-        "blue-secondary": "#0075c4",
+        "orange-primary": "#f26213",
+        "orange-secondary": "#d19449",
+        "blue-primary": "#0087ff",
+        "blue-secondary": "#21b1ff",
         faded: "#333",
         "brown-tertiary": "#591f0a",
         "faded-light": "#777",
