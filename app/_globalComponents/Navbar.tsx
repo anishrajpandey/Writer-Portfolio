@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav
       className={
-        "flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-16 "
+        "flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-16 fixed z-50  top-0"
       }
     >
       <div className="logoContainer flex items-center p-2">
@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className=" sm:hidden self-end h-full flex items-center fixed -top-56 right-6 z-50"
+        className=" sm:hidden self-end h-full flex items-center  mr-4 z-50"
         onClick={() => {
           setShowNavbar(!showNavbar);
         }}
@@ -40,7 +40,7 @@ const Navbar = () => {
       </div>
       <ul
         className={cn(
-          "flex flex-col text-sm font-semibold fixed -left-full px-4 pt-8 sm:pt-0 sm:px-12 top-0  sm:w-fit sm:inset-0 bg-blue-primary z-20 w-screen sm:bg-transparent sm:relative sm:flex-row gap-4 h-full sm:items-center transition duration-100 min-w-fit mobileNav",
+          "flex flex-col text-lg font-semibold fixed -left-full px-4 pt-8 sm:pt-0 sm:px-12 top-0  sm:w-fit sm:inset-0 bg-blue-primary z-20 w-screen sm:bg-transparent sm:relative sm:flex-row gap-4 h-full sm:items-center transition duration-100 min-w-fit mobileNav",
           {
             "left-0": showNavbar,
           }
