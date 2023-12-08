@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-import Navbar from "../_globalComponents/Navbar";
+import Navbar from "./_globalComponents/Navbar";
 import HeroSection from "./_components/HeroSection";
 import Model from "./_components/BookModel";
 import BookSection from "./_components/BookSection";

@@ -24,11 +24,11 @@ const BookSection = ({
   //     }]
   return (
     <>
-      <main className="bg-blue-secondary">
-        <main className="bookSection grid md:grid-cols-3 grid-cols-1 mb-16 bg-blue-secondary  pb-20 px-12 gap-7">
+      <main className="bg-blue-300">
+        <main className="bookSection grid md:grid-cols-3 grid-cols-1 mb-16 bg-blue-secondary  pb-10  px-12 gap-7">
           <div className="grid place-content-center col-span-1 ">
             <div className="relative">
-              <div className="bg-green-800 border-8  rounded-xl border-white w-fit">
+              <div className="border-8  rounded-xl border-white w-fit">
                 <Image
                   src={ImageBack}
                   width={400}
@@ -69,9 +69,9 @@ const BookSection = ({
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeWidth="2"
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
