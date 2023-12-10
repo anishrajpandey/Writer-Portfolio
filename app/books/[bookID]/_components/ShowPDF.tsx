@@ -29,7 +29,7 @@ export default function ShowPDF({
     <div className="flex justify-center bg-gray-300 h-screen overflow-y-scroll w-full px-4 md:px-12 md:scale-110">
       <Document
         // file="https://www.africau.edu/images/default/sample.pdf"
-        file={`/books/${Book}/${Chapter}.pdf`}
+        file={`/books/${Book}/1.pdf`}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         {/* {Array.apply(null, Array(numPages))
