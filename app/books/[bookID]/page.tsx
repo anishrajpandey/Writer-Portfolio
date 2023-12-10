@@ -11,13 +11,17 @@ import {
 } from "@material-tailwind/react";
 import BookIcon from "@/app/_globalComponents/icons/BookIcon";
 import ArrowIcon from "@/app/_globalComponents/icons/ArrowIcon";
-import Chapter from "./_components/Chapter";
+import ShowPDF from "./_components/ShowPDF";
+import { useParams } from "next/navigation";
 
-export default function page() {
+export default function Page() {
+  const params = useParams();
+  let { bookID } = params;
+  // const [SelectedBook, setSelectedBook] = useState({Book:1,ID})
   return (
-    <main className="flex  bg-blue-gray-500 w-screen h-screen overflow-y-scroll">
+    <main className="flex bg-blue-gray-500 w-screen h-screen overflow-y-scroll overflow-x-hidden">
       <Sidebar />
-      <Chapter />
+      <ShowPDF Book={bookID.toString()} Chapter="3" />
     </main>
   );
 }
@@ -39,9 +43,9 @@ function Sidebar() {
       <Card
         className={`${
           ShowSidebar ? "block" : "hidden"
-        } md:block max-h-[calc(100vh-2rem)]  text-white  w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5 overflow-y-scroll`}
+        } md:block h-screen pr-4 text-white  w-full max-w-[20rem] p-2 shadow-xl shadow-blue-gray-900/5 overflow-y-scroll overflow-x-hidden`}
       >
-        <div className="mb-2 p-4 text-white">
+        <div className="mb-2 p-4 text-white w-screen">
           <Typography variant="h5" color="blue-gray">
             Chapters
           </Typography>
@@ -128,6 +132,13 @@ function Sidebar() {
               <BookIcon />{" "}
             </ListItemPrefix>
             कमाि पकम वा पकम बाव बपव{" "}
+          </ListItem>
+
+          <ListItem>
+            <ListItemPrefix>
+              <BookIcon />{" "}
+            </ListItemPrefix>
+            Yet another chapter to lifee{" "}
           </ListItem>
         </List>
       </Card>

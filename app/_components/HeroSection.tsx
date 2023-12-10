@@ -25,13 +25,13 @@ export default function HeroSection() {
             Writer of Jana Andolan and Iron Man
           </p>
         </div>
-        <div className="btns flex gap-3">
+        <div className="btns flex gap-3 text-white">
           <Link href={"/books"}>
-            <button className="w-32 h-22 p-3 rounded-lg hover:bg-orange-secondary primary font-semibold  transition bg-orange-primary  ">
+            <button className="w-32 h-22 p-3  rounded-lg hover:bg-orange-secondary primary font-semibold  transition bg-orange-primary  ">
               Books
             </button>
           </Link>
-          <button className="w-32 h-22 p-3 rounded-lg  transition bg-faded-light font-semibold  border text-white">
+          <button className="w-32 h-22 p-3 rounded-lg  transition bg-faded-light font-semibold  border ">
             Blogs
           </button>
         </div>

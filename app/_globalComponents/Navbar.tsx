@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav
       className={
-        "flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-16 fixed z-50  top-0"
+        "flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-10 fixed z-50  top-0 backdrop-blur-lg"
       }
     >
       <div className="logoContainer flex items-center p-2">
