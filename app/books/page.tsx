@@ -13,25 +13,25 @@ const Book = () => {
           Title={"Book Name"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
           ImageURL={"/book1.png"}
-          RouteURL={"/books/somebookid"}
+          RouteURL={"/books/1"}
         />
         <BookCard
           Title={"Book Name"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
           ImageURL={"/book1.png"}
-          RouteURL={"/books/somebookid"}
+          RouteURL={"/books/1"}
         />
         <BookCard
           Title={"Book Name"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
           ImageURL={"/book1.png"}
-          RouteURL={"/books/somebookid"}
+          RouteURL={"/books/1"}
         />
         <BookCard
           Title={"Book Name"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
           ImageURL={"/book1.png"}
-          RouteURL={"/books/somebookid"}
+          RouteURL={"/books/1"}
         />
       </main>
     </main>
