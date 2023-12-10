@@ -32,20 +32,20 @@ export default function ShowPDF({
         file={`/books/${Book}/${Chapter}.pdf`}
         onLoadSuccess={onDocumentLoadSuccess}
       >
-        {Book}
-        {Chapter}
-        {createArrayFrom1ToN(numPages).map((pageNumber) => (
-          <div key={pageNumber}>
-            <p>
-              Page {pageNumber} of {numPages}
-            </p>
-            <Page
-              pageNumber={pageNumber}
-              renderAnnotationLayer={false}
-              renderTextLayer={false}
-            />
-          </div>
-        ))}
+        {Array.apply(null, Array(numPages))
+          .map((x, i) => i + 1)
+          .map((page) => (
+            <div key={page}>
+              <p>
+                Page {pageNumber} of {numPages}
+              </p>
+              <Page
+                pageNumber={page}
+                renderAnnotationLayer={false}
+                renderTextLayer={false}
+              />
+            </div>
+          ))}
       </Document>
       <p>
         Page {pageNumber} of {numPages}
