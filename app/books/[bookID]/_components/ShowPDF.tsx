@@ -19,8 +19,8 @@ export default function ShowPDF() {
   return (
     <div>
       <Document
-        // file="https://www.africau.edu/images/default/sample.pdf"
-        file="/sat.pdf"
+        file="https://www.africau.edu/images/default/sample.pdf"
+        // file="/books/pdf"
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page pageNumber={pageNumber} />

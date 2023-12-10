@@ -9,14 +9,6 @@ import {
   ListItemSuffix,
   Chip,
 } from "@material-tailwind/react";
-import {
-  PresentationChartBarIcon,
-  ShoppingBagIcon,
-  UserCircleIcon,
-  Cog6ToothIcon,
-  InboxIcon,
-  PowerIcon,
-} from "@heroicons/react/24/solid";
 import BookIcon from "@/app/_globalComponents/icons/BookIcon";
 import ArrowIcon from "@/app/_globalComponents/icons/ArrowIcon";
 import Chapter from "./_components/Chapter";
@@ -30,7 +22,7 @@ export default function page() {
   );
 }
 
-export function Sidebar() {
+function Sidebar() {
   const [ShowSidebar, setShowSidebar] = useState(false);
 
   return (
