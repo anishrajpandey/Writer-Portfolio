@@ -27,6 +27,33 @@ export default function Home() {
         ImageBack={"/Event.jpg"}
         URL={"/book/1/read"}
       />
+      <BookSection
+        BookName={"Lauha Purush"}
+        Description={
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
+        }
+        ImageFront={"/book1.png"}
+        ImageBack={"/Event.jpg"}
+        URL={"/book/1/read"}
+      />
+      <BookSection
+        BookName={"Lauha Purush"}
+        Description={
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
+        }
+        ImageFront={"/book1.png"}
+        ImageBack={"/Event.jpg"}
+        URL={"/book/1/read"}
+      />
+      <BookSection
+        BookName={"Lauha Purush"}
+        Description={
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
+        }
+        ImageFront={"/book1.png"}
+        ImageBack={"/Event.jpg"}
+        URL={"/book/1/read"}
+      />
 
       {/* Reviews */}
       <h1 className="mb-0  mt-12 text-3xl font-extrabold text-gray-900  md:text-5xl lg:text-6xl">

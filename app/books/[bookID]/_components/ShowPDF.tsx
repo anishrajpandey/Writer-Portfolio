@@ -1,5 +1,4 @@
 "use client";
-import { url } from "inspector";
 import { useState } from "react";
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";

@@ -24,7 +24,7 @@ const BookSection = ({
   //     }]
   return (
     <>
-      <main className="bg-blue-300">
+      <main className="bg-url[('/Event.jpg')]">
         <main className="bookSection grid md:grid-cols-3 grid-cols-1 mb-16 bg-blue-secondary  pb-10  px-12 gap-7">
           <div className="grid place-content-center col-span-1 ">
             <div className="relative">
@@ -50,7 +50,7 @@ const BookSection = ({
             <h2 className="uppercase text-lg font-serif tracking-wider text-black">
               BOOK NAME
             </h2>
-            <h1 className="text-xl md:text-4xl font-bold tracking-wide uppercase ">
+            <h1 className="text-xl md:text-4xl font-bold tracking-wide text-blue-primary uppercase ">
               {BookName}
             </h1>
             <p className="text-faded text-md md:text-lg py-4">{Description}</p>
