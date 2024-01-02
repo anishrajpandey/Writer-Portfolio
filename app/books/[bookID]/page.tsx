@@ -15,22 +15,13 @@ import ShowPDF from "./_components/ShowPDF";
 import { useParams } from "next/navigation";
 
 export default function Page() {
+  const [ShowSidebar, setShowSidebar] = useState(false);
+
   const params = useParams();
   let { bookID } = params;
   // const [SelectedBook, setSelectedBook] = useState({Book:1,ID})
   return (
     <main className="flex bg-blue-gray-500 w-screen h-screen overflow-y-scroll overflow-x-hidden">
-      <Sidebar />
-      <ShowPDF />
-    </main>
-  );
-}
-
-function Sidebar() {
-  const [ShowSidebar, setShowSidebar] = useState(false);
-
-  return (
-    <>
       <div
         className="bg-white flex-1 rounded-md p-4 md:hidden absolute z-10 flex gap-2 justify-center items-center cursor-pointer "
         onClick={() => setShowSidebar(!ShowSidebar)}
@@ -66,6 +57,11 @@ function Sidebar() {
           </ListItem>
         </List>
       </Card>
-    </>
+      <ShowPDF />
+    </main>
   );
+}
+
+function Sidebar() {
+  return <></>;
 }
