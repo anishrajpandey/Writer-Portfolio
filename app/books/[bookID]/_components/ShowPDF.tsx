@@ -1,13 +1,8 @@
 "use client";
 import { useState } from "react";
 
-export default function ShowPDF({
-  Book,
-  Chapter,
-}: {
-  Book: any;
-  Chapter: any;
-}) {
+export default function ShowPDF() {
+// { Book, Chapter }: { Book: any; Chapter: any }
   const [numPages, setNumPages] = useState<number>();
 
   // function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {

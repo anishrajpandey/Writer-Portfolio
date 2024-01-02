@@ -6,6 +6,7 @@ import HeroSection from "./_components/HeroSection";
 import Model from "./_components/BookModel";
 import BookSection from "./_components/BookSection";
 import Testimonials from "./_components/Testimonials";
+import ShowPDF from "./books/[bookID]/_components/ShowPDF";
 export default function Home() {
   return (
     <>
@@ -62,6 +63,7 @@ export default function Home() {
         </span>{" "}
       </h1>
       <Testimonials />
+      <ShowPDF />
     </>
   );
 }

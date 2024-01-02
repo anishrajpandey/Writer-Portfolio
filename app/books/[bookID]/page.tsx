@@ -21,7 +21,7 @@ export default function Page() {
   return (
     <main className="flex bg-blue-gray-500 w-screen h-screen overflow-y-scroll overflow-x-hidden">
       <Sidebar />
-      <ShowPDF Book={bookID.toString()} Chapter="3" />
+      <ShowPDF />
     </main>
   );
 }
