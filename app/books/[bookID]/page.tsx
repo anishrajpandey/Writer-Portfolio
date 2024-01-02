@@ -20,7 +20,7 @@ export default function Page() {
   // const [SelectedBook, setSelectedBook] = useState({Book:1,ID})
   return (
     <main className="flex bg-blue-gray-500 w-screen h-screen overflow-y-scroll overflow-x-hidden">
-      {/* <Sidebar /> */}
+      <Sidebar />
       <ShowPDF />
     </main>
   );
@@ -56,82 +56,6 @@ function Sidebar() {
               <BookIcon />{" "}
             </ListItemPrefix>
             Dashboard
-          </ListItem>
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
-          </ListItem>
-
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
-          </ListItem>
-
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
-          </ListItem>
-
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
-          </ListItem>
-
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
-          </ListItem>
-
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
-          </ListItem>
-
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
-          </ListItem>
-
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
-          </ListItem>
-
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
-          </ListItem>
-
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
-          </ListItem>
-
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            कमाि पकम वा पकम बाव बपव{" "}
           </ListItem>
 
           <ListItem>
