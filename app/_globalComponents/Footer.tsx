@@ -25,7 +25,7 @@ const Footer = () => {
         <p>Phone:</p>
         <p>9866548652</p>
       </div>
-      <nav>
+      <div>
         <div className="text-lg font-semibold">Social media</div>
         <div className="grid grid-flow-col gap-4">
           <a>
@@ -62,7 +62,7 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-      </nav>
+      </div>
     </footer>
   );
 };

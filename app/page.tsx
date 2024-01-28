@@ -8,6 +8,7 @@ import BookSection from "./_components/BookSection";
 import Testimonials from "./_components/Testimonials";
 import ShowPDF from "./books/[bookID]/_components/ShowPDF";
 import AboutAuthor from "./_components/AboutAuthor";
+import TestimonialScrollable from "./_components/TestimonialScrollable";
 export default function Home() {
   return (
     <>
@@ -65,7 +66,11 @@ export default function Home() {
           Reviews
         </span>{" "}
       </h1>
-      <Testimonials />
+      <h2 className="text-center m-0 p-0 text-lg sm:text-xl font-extralight text-faded tracking-wide uppercase">
+        What Readers have to say
+      </h2>
+      {/* <Testimonials /> */}
+      <TestimonialScrollable />
       {/* <ShowPDF /> */}
     </>
   );
