@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -47,7 +48,7 @@ const Navbar = () => {
         )}
       >
         <li className="hover:text-orange-secondary transition cursor-pointer">
-          Home{" "}
+          <Link href={"/"}> Home</Link>{" "}
         </li>
         <li className="hover:text-orange-secondary transition cursor-pointer">
           {" "}

@@ -46,7 +46,7 @@ const BookSection = ({
               </div>
             </div>
           </div>
-          <div className="right col-span-2 pl-12 py-12 md:p-16 grid justify-between gap-3 ">
+          <div className="right col-span-2  md:py-12 md:p-16 grid justify-between gap-3 ">
             <h2 className="uppercase text-lg font-serif tracking-wider text-black">
               BOOK NAME
             </h2>

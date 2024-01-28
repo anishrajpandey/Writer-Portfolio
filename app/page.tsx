@@ -7,6 +7,7 @@ import Model from "./_components/BookModel";
 import BookSection from "./_components/BookSection";
 import Testimonials from "./_components/Testimonials";
 import ShowPDF from "./books/[bookID]/_components/ShowPDF";
+import AboutAuthor from "./_components/AboutAuthor";
 export default function Home() {
   return (
     <>
@@ -55,6 +56,8 @@ export default function Home() {
         ImageBack={"/Event.jpg"}
         URL={"/book/1/read"}
       />
+      {/* about the author */}
+      <AboutAuthor />
 
       {/* Reviews */}
       <h1 className="mb-0  mt-12 text-3xl font-extrabold text-gray-900  md:text-5xl lg:text-6xl">
@@ -63,7 +66,7 @@ export default function Home() {
         </span>{" "}
       </h1>
       <Testimonials />
-      <ShowPDF />
+      {/* <ShowPDF /> */}
     </>
   );
 }
