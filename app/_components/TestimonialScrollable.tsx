@@ -9,8 +9,14 @@ const Testimonials = () => {
     <>
       <div className="flex my-16 overflow-hidden min-w-2xl relative w-full will-change-auto hover:will-change-scroll">
         <Draggable innerRef={journalRef} rootClass={"drag"}>
-          <div className="flex flex-row overflow-x-auto " ref={journalRef}>
+          <div className="flex flex-row overflow-x-auto bg- " ref={journalRef}>
             <div className="shrink-0 bg-blue-secondary">
+              <Testimonial />
+            </div>
+            <div className="shrink-0">
+              <Testimonial />
+            </div>
+            <div className="shrink-0">
               <Testimonial />
             </div>
             <div className="shrink-0">
