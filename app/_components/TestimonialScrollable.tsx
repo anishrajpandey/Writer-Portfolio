@@ -26,10 +26,6 @@ const Testimonials = () => {
               <Testimonial />
             </div>
 
-            {/* <div className=" shrink-0">
-              <div className="w-fit">
-              </div>
-            </div> */}
           </div>
         </Draggable>
       </div>
