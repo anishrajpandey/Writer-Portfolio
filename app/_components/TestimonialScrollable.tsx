@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, MouseEventHandler } from "react";
 import Testimonial from "./Testimonials";
 const img =
   "https://images.unsplash.com/photo-1678817546438-acc28fac4d3a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Nzk2NTQzNzY&ixlib=rb-4.0.3&q=85";
@@ -6,12 +6,11 @@ type Props = {
   [key: string]: any;
 };
 const Testimonials = () => {
-  const journalRef = useRef(null);
   return (
     <>
       <div className="flex my-16 overflow-hidden min-w-2xl relative w-full will-change-auto hover:will-change-scroll">
         <Draggable rootClass={"drag"}>
-          <div className="flex flex-row overflow-x-auto bg- " ref={journalRef}>
+          <div className="flex flex-row overflow-x-auto bg- ">
             <div className="shrink-0 bg-blue-secondary">
               <Testimonial />
             </div>
@@ -49,16 +48,19 @@ const Draggable = ({
   rootClass: any;
   children: any;
 }) => {
-  const ourRef = useRef(null);
-  const [isMouseDown, setIsMouseDown] = useState(false);
-  const mouseCoords = useRef({
+  const ourRef = useRef<any>(null);
+
+  const [isMouseDown, setIsMouseDown] = useState<any>(false);
+
+  const mouseCoords = useRef<any>({
     startX: 0,
     startY: 0,
     scrollLeft: 0,
     scrollTop: 0,
   });
-  const [isScrolling, setIsScrolling] = useState(false);
-  const handleDragStart = (e) => {
+
+  const [isScrolling, setIsScrolling] = useState<any>(false);
+  const handleDragStart = (e: any) => {
     if (!ourRef.current) return;
     const slider = ourRef.current?.children[0];
     const startX = e.pageX - slider.offsetLeft;
@@ -74,7 +76,7 @@ const Draggable = ({
     if (!ourRef.current) return;
     document.body.style.cursor = "default";
   };
-  const handleDrag = (e) => {
+  const handleDrag = (e: any) => {
     if (!isMouseDown || !ourRef.current) return;
     e.preventDefault();
     const slider = ourRef.current?.children[0];
