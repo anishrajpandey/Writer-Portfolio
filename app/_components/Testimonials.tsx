@@ -1,7 +1,19 @@
 import Image from "next/image";
 import React from "react";
 
-const Testimonials = () => {
+const Testimonials = ({
+  id,
+  Testimonial,
+  Name,
+  Post,
+  ImageName,
+}: {
+  id: Number;
+  Testimonial: String;
+  Name: String;
+  Post: String;
+  ImageName: any;
+}) => {
   return (
     <div>
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
@@ -9,7 +21,7 @@ const Testimonials = () => {
         <figure className="max-w-screen-md mx-auto">
           {" "}
           <svg
-            className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+            className="h-12 mx-auto mb-3 text-gray-400 "
             viewBox="0 0 24 27"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -22,10 +34,8 @@ const Testimonials = () => {
           </svg>{" "}
           <blockquote>
             {" "}
-            <p className="text-2xl font-medium text-gray-900 dark:text-white">
-              Flowbite is just awesome. It contains tons of predesigned
-              components and pages starting from login screen to complex
-              dashboard. Perfect choice for your next SaaS application.
+            <p className="text-2xl font-medium text-gray-900 ">
+              {Testimonial}
             </p>{" "}
           </blockquote>{" "}
           <figcaption className="flex items-center justify-center mt-6 space-x-3">
@@ -34,17 +44,15 @@ const Testimonials = () => {
               className="w-6 h-6 rounded-full"
               src="/ghanendra.jpg"
               alt="profile picture"
-              width={50}
-              height={50}
-            />{" "}
-            <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+              width={70}
+              height={70}
+            ></Image>{" "}
+            <div className="flex items-center divide-x-2 divide-gray-500 ">
               {" "}
-              <div className="pr-3 font-medium text-gray-900 dark:text-white">
-                Micheal Gough
+              <div className="pr-3 font-medium text-gray-900 ">
+                {Name}{" "}
               </div>{" "}
-              <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
-                CEO at Google
-              </div>{" "}
+              <div className="pl-3 text-sm font-light text-black">{Post}</div>{" "}
             </div>{" "}
           </figcaption>{" "}
         </figure>{" "}

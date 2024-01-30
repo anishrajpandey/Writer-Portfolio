@@ -5,27 +5,64 @@ const img =
 type Props = {
   [key: string]: any;
 };
+const Data = [
+  {
+    id: 1,
+    Testimonial:
+      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+    Name: "Mr. Sam Altman",
+    Post: "Someone Big",
+    ImageName: "ghanendra.jpg",
+  },
+  {
+    id: 2,
+    Testimonial:
+      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+    Name: "Mr. Sam Altman",
+    Post: "Someone Big",
+    ImageName: "ghanendra.jpg",
+  },
+  {
+    id: 3,
+    Testimonial:
+      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+    Name: "Mr. Sam Altman",
+    Post: "Someone Big",
+    ImageName: "ghanendra.jpg",
+  },
+  {
+    id: 4,
+    Testimonial:
+      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+    Name: "Mr. Sam Altman",
+    Post: "Someone Big",
+    ImageName: "ghanendra.jpg",
+  },
+  {
+    id: 5,
+    Testimonial:
+      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+    Name: "Mr. Sam Altman",
+    Post: "Someone Big",
+    ImageName: "ghanendra.jpg",
+  },
+];
 const Testimonials = () => {
   return (
     <>
       <div className="flex my-16 overflow-hidden min-w-2xl relative w-full will-change-auto hover:will-change-scroll">
         <Draggable rootClass={"drag"}>
           <div className="flex flex-row overflow-x-auto bg- ">
-            <div className="shrink-0 bg-blue-secondary">
-              <Testimonial />
-            </div>
-            <div className="shrink-0">
-              <Testimonial />
-            </div>
-            <div className="shrink-0">
-              <Testimonial />
-            </div>
-            <div className="shrink-0">
-              <Testimonial />
-            </div>
-            <div className="shrink-0">
-              <Testimonial />
-            </div>
+            {Data.map((options) => (
+              <div
+                className={`shrink-0 ${
+                  options.id % 2 !== 0 ? "bg-blue-secondary" : "bg-gray-100"
+                }`}
+                key={options.id}
+              >
+                <Testimonial {...options} />
+              </div>
+            ))}
           </div>
         </Draggable>
       </div>
