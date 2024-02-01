@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import Title from "../_globalComponents/Title";
 import styles from "./../../styles/Title.module.css";
+import style from "./../../styles/Style.module.css";
+
 const AboutAuthor = () => {
   return (
     <>
@@ -10,13 +12,17 @@ const AboutAuthor = () => {
         <main className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-12 min-h-[300px]  py-4 gap-2 justify-center items-center w-full md:w-9/12  mx-auto">
           <div className="  bg-gray-200 mx-auto relative min-h-[250px] rounded-lg overflow-hidden flex justify-end ">
             {/* <div className="relative  mx-auto w-32"> */}
-            <Image
-              src={"/assets/photos/aboutImage.jpg"}
-              width={250}
-              height={250}
-              alt="photo"
-              className="contain"
-            />
+            <div className={style.hover14}>
+              <figure>
+                <Image
+                  src={"/assets/photos/aboutImage.jpg"}
+                  width={250}
+                  height={250}
+                  alt="photo"
+                  className="contain cursor-pointer"
+                />
+              </figure>
+            </div>
           </div>
           {/* </div>s */}
           <div className="flex flex-col justify-center items-center">

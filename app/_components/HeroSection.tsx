@@ -27,7 +27,7 @@ export default function HeroSection() {
         </div>
         <div className="btns flex gap-3 text-white">
           <Link href={"/books"}>
-            <button className="w-32 h-22 p-3  rounded-lg hover:bg-orange-secondary primary font-semibold  transition bg-orange-primary  ">
+            <button className="w-32 h-22 p-3 rounded-lg bg-orange-primary hover:bg-orange-secondary primary font-semibold  transition  ">
               Books
             </button>
           </Link>

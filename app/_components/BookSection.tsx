@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import BookIcon from "../_globalComponents/icons/BookIcon";
+import ArrowIcon from "../_globalComponents/icons/ArrowIcon";
+import { DownloadIcon } from "lucide-react";
 
 const BookSection = ({
   BookName = "Iron Man",
@@ -24,8 +27,8 @@ const BookSection = ({
   //     }]
   return (
     <>
-      <main className="bg-url[('/Event.jpg')]">
-        <main className="bookSection grid md:grid-cols-3 grid-cols-1 mb-16 bg-blue-secondary  pb-10  px-12 gap-7">
+      <main className="">
+        <main className="bookSection grid md:grid-cols-3 grid-cols-1 mb-16  pb-10  px-12 gap-7">
           <div className="grid place-content-center col-span-1 ">
             <div className="relative">
               <div className="border-8  rounded-xl border-white w-fit">
@@ -39,8 +42,8 @@ const BookSection = ({
               <div className="absolute -right-12 -bottom-12 w-fit ">
                 <Image
                   src={ImageFront}
-                  width={140}
-                  height={150}
+                  width={200}
+                  height={300}
                   alt="cannot load image"
                 />
               </div>
@@ -54,29 +57,29 @@ const BookSection = ({
               {BookName}
             </h1>
             <p className="text-faded text-md md:text-lg py-4">{Description}</p>
-            <Link href={URL}>
-              <button
-                type="button"
-                className="text-white bg-blue-secondary hover:bg-blue-secondary focus:ring-4 focus:outline-none focus:ring-blue-secondary font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center w-fit"
-              >
-                Read
-                <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
+            <div className="flex gap-5 flex-wrap-reverse">
+              <Link href={URL}>
+                <button
+                  type="button"
+                  className="text-white bg-blue-secondary hover:bg-blue-primary px-4 py-3 text-xl font-bold width-max flex justify-center gap-2 items-center rounded-lg"
                 >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </button>
-            </Link>
+                  Read Now
+                  <BookIcon />
+                </button>
+              </Link>
+              <a
+                href="https://firebasestorage.googleapis.com/v0/b/visionventures-b8ed4.appspot.com/o/book-pdf%2FLauhapurus%20(1).pdf?alt=media&token=6e321487-1ca0-4daa-96c5-4723a56da2d7"
+                download
+              >
+                <button
+                  type="button"
+                  className="text-white bg-orange-secondary hover:bg-orange-primary px-4 py-3 text-xl font-bold width-max flex justify-center gap-2 items-center rounded-lg"
+                >
+                  Download
+                  <DownloadIcon />
+                </button>{" "}
+              </a>
+            </div>
           </div>
         </main>
       </main>
