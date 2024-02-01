@@ -1,0 +1,34 @@
+.content {
+  --orange-primary: #f26213;
+  --orange-secondary: #d19449;
+  --blue-primary: #0087ff;
+  --blue-secondary: #21b1ff;
+  font-size: clamp(2rem, 10vw, 7rem);
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 3px;
+
+  color: transparent;
+  background: rgba(187, 187, 187, 0.6);
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+  text-align: center;
+  text-shadow: -4px 8px 7px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.bgPattern {
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+}

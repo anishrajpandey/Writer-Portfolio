@@ -3,7 +3,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 bg-slate-200 text-black w-screen flex flex-wrap justify-between items-center gap-2">
+    <footer
+      // style={{ clipPath: "circle(67.0% at 50% 66%)" }}
+      className="footer footer-center p-10 bg-slate-200 bg-blue-secondary text-black w-screen flex flex-wrap justify-between items-center gap-2"
+    >
       <aside>
         <Image
           src={"/ghanendra.jpg"}
