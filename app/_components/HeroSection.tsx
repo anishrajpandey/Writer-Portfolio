@@ -37,14 +37,14 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="right w-screen md:w-2/5 h-full flex items-center ">
-        <div className="w-full aspect-square flex justify-center items-center relative">
+        <div className="  min-w-32 flex justify-center items-center relative">
           <Image
-            src={"/book1.jpg"}
-            // width={300}
-            // height={300}
-            fill
+            src={"/assets/books/lauhapurush_transparent.png"}
+            width={400}
+            height={400}
+            // fill
             alt="book"
-            className="mix-blend-multiply"
+            // className="mix-blend-multiply"
           />
           {/* <BookModel /> */}
           {/* todo replace image wth a 3d model */}

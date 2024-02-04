@@ -26,7 +26,7 @@ const Navbar = () => {
     >
       <div className="logoContainer flex items-center p-2">
         <div className="relative w-12 h-12 pb-4">
-          <Image src={"/logo.svg"} fill alt="logo" />
+          <Image src={"/assets/files/logo.svg"} fill alt="logo" />
         </div>
         <h2 className="font-bold ">Ghanendra Purush Dhakal</h2>
       </div>
