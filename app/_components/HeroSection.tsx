@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // import Marquee from "react-marquee-slider";
 import Marquee from "react-fast-marquee";
-
+import Scene from "./BookModel";
 export default function HeroSection() {
   return (
     <main className=" bg-cloudBg bg-no-repeat relative bg-cover ml-0  min-h-screen w-screen flex flex-col md:flex-row pt-32 md:pt-11 -mt-16 overflow-hidden  ">
@@ -36,20 +36,11 @@ export default function HeroSection() {
           </button>
         </div>
       </div>
-      <div className="right w-screen md:w-2/5 h-full flex items-center ">
-        <div className="  min-w-32 flex justify-center items-center relative">
-          <Image
-            src={"/assets/books/lauhapurush_transparent.png"}
-            width={400}
-            height={400}
-            // fill
-            alt="book"
-            // className="mix-blend-multiply"
-          />
-          {/* <BookModel /> */}
-          {/* todo replace image wth a 3d model */}
-        </div>
+
+      <div className=" right  h-screen flex items-center ">
+        <Scene />
       </div>
+
       <div className="absolute bottom-0 left-0 right-0">
         <Marquee>
           I can be a React component, multiple React components, or just some
