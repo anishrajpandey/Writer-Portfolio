@@ -27,35 +27,53 @@ export default function Page() {
         onClick={() => setShowSidebar(!ShowSidebar)}
       >
         <h2 className="text-lg font-semibold">Chapters</h2>
-        <span className="text-3xl w-fit rounded-[50%] p-2 bg-orange-primary text-white ">
+        <span className="text-3xl w-fit rounded-[50%] p-2 bg-orange-primary ">
           <ArrowIcon />
         </span>
       </div>
       <Card
+        placeholder={"A card"}
         className={`${
           ShowSidebar ? "block" : "hidden"
-        } md:block h-screen pr-4 text-white  w-full max-w-[20rem] p-2 shadow-xl shadow-blue-gray-900/5 overflow-y-scroll overflow-x-hidden`}
+        } md:block h-screen pr-4  w-full max-w-[20rem] p-2 shadow-xl shadow-blue-gray-900/5 overflow-y-scroll overflow-x-hidden`}
       >
-        <div className="mb-2 p-4 text-white w-screen">
-          <Typography variant="h5" color="blue-gray">
+        <div className="mb-2 p-4 w-screen">
+          <Typography placeholder={"Chapters"} variant="h5" color="blue-gray">
             Chapters
           </Typography>
         </div>
-        <List>
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            Dashboard
-          </ListItem>
 
-          <ListItem>
-            <ListItemPrefix>
-              <BookIcon />{" "}
-            </ListItemPrefix>
-            Yet another chapter to lifee{" "}
-          </ListItem>
-        </List>
+        <ListItem placeholder={""}>
+          <ListItemPrefix placeholder={""}>
+            <BookIcon />{" "}
+          </ListItemPrefix>
+          Dashboard
+        </ListItem>
+
+        <ListItem placeholder={""}>
+          <ListItemPrefix placeholder={""}>
+            <BookIcon />{" "}
+          </ListItemPrefix>
+          Yet another chapter to lifee{" "}
+        </ListItem>
+        <ListItem placeholder={""}>
+          <ListItemPrefix placeholder={""}>
+            <BookIcon />{" "}
+          </ListItemPrefix>
+          Yet another chapter to lifee{" "}
+        </ListItem>
+        <ListItem placeholder={""}>
+          <ListItemPrefix placeholder={""}>
+            <BookIcon />{" "}
+          </ListItemPrefix>
+          Yet another chapter to lifee{" "}
+        </ListItem>
+        <ListItem placeholder={""}>
+          <ListItemPrefix placeholder={""}>
+            <BookIcon />{" "}
+          </ListItemPrefix>
+          Yet another chapter to lifee{" "}
+        </ListItem>
       </Card>
       <ShowPDF />
     </main>
