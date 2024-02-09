@@ -61,7 +61,7 @@ module.exports = withMT({
         },
       },
       backgroundImage: {
-        cloudBg: "url('/assets/photos/bg-home.JPG')",
+        cloudBg: "url('/assets/photos/newbg.jpg')",
       },
       borderRadius: {
         lg: "var(--radius)",
