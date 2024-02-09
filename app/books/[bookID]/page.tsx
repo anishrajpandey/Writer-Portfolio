@@ -213,7 +213,3 @@ export default function Page() {
     </main>
   );
 }
-
-function Sidebar() {
-  return <></>;
-}
