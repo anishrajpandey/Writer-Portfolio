@@ -8,29 +8,29 @@ const Book = () => {
       <h2 className="text-left px-12 text-2xl pt-8 md:text-5xl font-bold tracking-tight text-gray-900">
         Published Books{" "}
       </h2>
-      <main className="min-w-screen grid grid-cols-1 md:grid-cols-4 gap-7 px-12 place-content-center pt-6 pb-12 justify-center w-screen max-w-96 ">
+      <main className="w-screen grid grid-cols-1 md:grid-cols-4 gap-7 px-12 place-content-center pt-6 pb-12 justify-center">
         <BookCard
-          Title={"Book Name"}
+          Title={"Ironman"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/book1.png"}
+          ImageURL={"/assets/photos/books/ironman.jpg"}
           RouteURL={"/books/1"}
         />
         <BookCard
-          Title={"Book Name"}
+          Title={"Lauha Purush"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/book1.png"}
+          ImageURL={"/assets/photos/books/lauhapurush.jpg"}
           RouteURL={"/books/2"}
         />
         <BookCard
-          Title={"Book Name"}
+          Title={"Itihas"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/book1.png"}
+          ImageURL={"/assets/photos/books/itihas.jpg"}
           RouteURL={"/books/3"}
         />
         <BookCard
-          Title={"Book Name"}
+          Title={"Jana Andalon"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/book1.png"}
+          ImageURL={"/assets/photos/books/janaandolan.jpg"}
           RouteURL={"/books/4"}
         />
       </main>
@@ -49,25 +49,22 @@ function BookCard({
   RouteURL: any;
 }) {
   return (
-    <div className=" bg-white border cursor:pointer hover:scale-95 transition duration-300 border-gray-200 rounded-lg shadow flex flex-col items-center  pt-8">
+    <div className="w-fit bg-white border cursor:pointer hover:scale-95 transition duration-300 border-gray-200 rounded-lg shadow flex flex-col items-center pt-8">
       <Image
         width={150}
         height={250}
         className="rounded-t-lg h-52 cursor-pointer"
-        src={"/book1.png"}
+        src={ImageURL}
         alt=""
       />
 
       <div className="p-5 ">
         <a href="#">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
-            Iron Man
+            {Title}
           </h5>
         </a>
-        <p className="mb-3 font-normal text-gray-700 ">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
-        </p>
+        <p className="mb-3 font-normal text-gray-700 ">{Description}</p>
 
         <button>
           <Link
