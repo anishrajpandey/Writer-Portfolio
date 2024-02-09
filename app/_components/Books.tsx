@@ -17,7 +17,7 @@ export default function Books() {
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
           }
           ImageFront={"/assets/photos/books/lauhapurush_transparent.png"}
-          ImageBack={"/assets/photos/placeholder.JPG"}
+          ImageBack={"/assets/photos/placeholder.jpg"}
           URL={"/book/2"}
         />
         {/* </ScrollAnimation> */}
@@ -32,7 +32,7 @@ export default function Books() {
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
           }
           ImageFront={"/assets/photos/books/ironman_transparent.png"}
-          ImageBack={"/assets/photos/placeholder.JPG"}
+          ImageBack={"/assets/photos/placeholder.jpg"}
           URL={"/book/1"}
         />
         {/* </ScrollAnimation> */}
@@ -47,7 +47,7 @@ export default function Books() {
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
           }
           ImageFront={"/assets/photos/books/janaandolan_transparent.png"}
-          ImageBack={"/assets/photos/placeholder.JPG"}
+          ImageBack={"/assets/photos/placeholder.jpg"}
           URL={"/book/1"}
         />
         {/* </ScrollAnimation> */}
@@ -61,8 +61,8 @@ export default function Books() {
           Description={
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
           }
-          ImageFront={"/assets/books/itihas_transparent.png"}
-          ImageBack={"/assets/photos/placeholder.JPG"}
+          ImageFront={"/assets/photos/books/itihas_transparent.png"}
+          ImageBack={"/assets/photos/placeholder.jpg"}
           URL={"/book/1"}
         />
         {/* </ScrollAnimation> */}
