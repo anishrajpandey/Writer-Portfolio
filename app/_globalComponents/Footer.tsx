@@ -19,7 +19,7 @@ const Footer = () => {
           Ghanendra Purush Dhakal <br />
           Writer. Spiritual . Journalist . Social Worker
         </p>
-        <p>Copyright © 2023 - All right reserved</p>
+        <p>Copyright © 2023 - All right reserved </p>
       </aside>
       <div className="text-lg font-semibold ">
         <p>Email address:</p>

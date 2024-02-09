@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav
       className={
-        "flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-18 items-center fixed z-50  top-0  bg-white"
+        "flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-16 items-center fixed z-50  top-0  bg-white"
       }
     >
       <div className="logoContainer flex items-center p-2">

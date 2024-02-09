@@ -18,6 +18,10 @@ module.exports = withMT({
       },
     },
     extend: {
+      height: {
+        "like-screen": "calc(100vh - 64px);",
+      },
+
       colors: {
         "orange-primary": "#f26213",
         "orange-secondary": "#d19449",

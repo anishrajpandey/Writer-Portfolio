@@ -1,14 +1,13 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-// import Marquee from "react-marquee-slider";
 import Marquee from "react-fast-marquee";
 import Scene from "./BookModel";
 export default function HeroSection() {
   return (
     <main className="bg-cloudBg bg-opacity-10  bg-no-repeat relative bg-cover ml-0 min-h-screen w-screen flex flex-col md:flex-row pt-32 md:pt-11 -mt-16 overflow-hidden  ">
       <div className="left w-screen md:w-3/5  grid place-content-center scale-110">
-        <div className="text-xl md:text-3xl font-bold text-white">
+        <div className="text-xl md:text-3xl font-bold text-white  ">
           <h1> Bestselling </h1>
           <h1>Spirituality Author</h1>
         </div>
