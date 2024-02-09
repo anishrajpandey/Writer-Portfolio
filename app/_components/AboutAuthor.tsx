@@ -15,7 +15,7 @@ const AboutAuthor = () => {
             <div className={style.hover14}>
               <figure>
                 <Image
-                  src={"/assets/photos/aboutImage.jpg"}
+                  src={"/assets/photos/aboutImage.JPG"}
                   width={250}
                   height={250}
                   alt="photo"

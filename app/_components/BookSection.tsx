@@ -7,7 +7,7 @@ import { DownloadIcon } from "lucide-react";
 const BookSection = ({
   BookName = "Iron Man",
   Description = "Description ",
-  ImageBack = "/Event.jpg",
+  ImageBack = "/Event.JPG",
   ImageFront = "/book1.png",
   URL = "/books/read",
 }: {

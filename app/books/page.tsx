@@ -12,25 +12,25 @@ const Book = () => {
         <BookCard
           Title={"Ironman"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/assets/photos/books/ironman.jpg"}
+          ImageURL={"/assets/photos/books/ironman.JPG"}
           RouteURL={"/books/1"}
         />
         <BookCard
           Title={"Lauha Purush"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/assets/photos/books/lauhapurush.jpg"}
+          ImageURL={"/assets/photos/books/lauhapurush.JPG"}
           RouteURL={"/books/2"}
         />
         <BookCard
           Title={"Itihas"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/assets/photos/books/itihas.jpg"}
+          ImageURL={"/assets/photos/books/itihas.JPG"}
           RouteURL={"/books/3"}
         />
         <BookCard
           Title={"Jana Andalon"}
           Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/assets/photos/books/janaandolan.jpg"}
+          ImageURL={"/assets/photos/books/janaandolan.JPG"}
           RouteURL={"/books/4"}
         />
       </main>

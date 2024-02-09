@@ -42,7 +42,7 @@ const Testimonials = ({
             {" "}
             <Image
               className="w-6 h-6 rounded-full"
-              src="/ghanendra.jpg"
+              src="/ghanendra.JPG"
               alt="profile picture"
               width={70}
               height={70}

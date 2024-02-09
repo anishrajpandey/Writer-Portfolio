@@ -12,7 +12,7 @@ const Data = [
       "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
     Name: "Mr. Sam Altman",
     Post: "Someone Big",
-    ImageName: "ghanendra.jpg",
+    ImageName: "ghanendra.JPG",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const Data = [
       "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
     Name: "Mr. Sam Altman",
     Post: "Someone Big",
-    ImageName: "ghanendra.jpg",
+    ImageName: "ghanendra.JPG",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const Data = [
       "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
     Name: "Mr. Sam Altman",
     Post: "Someone Big",
-    ImageName: "ghanendra.jpg",
+    ImageName: "ghanendra.JPG",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const Data = [
       "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
     Name: "Mr. Sam Altman",
     Post: "Someone Big",
-    ImageName: "ghanendra.jpg",
+    ImageName: "ghanendra.JPG",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const Data = [
       "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
     Name: "Mr. Sam Altman",
     Post: "Someone Big",
-    ImageName: "ghanendra.jpg",
+    ImageName: "ghanendra.JPG",
   },
 ];
 const Testimonials = () => {
