@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav
       className={
-        "flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-10 fixed z-50  top-0  bg-white"
+        "flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-18 items-center fixed z-50  top-0  bg-white"
       }
     >
       <div className="logoContainer flex items-center p-2">
@@ -48,7 +48,15 @@ const Navbar = () => {
         )}
       >
         <li className="hover:text-orange-secondary transition cursor-pointer">
-          <Link href={"/"}> Home</Link>{" "}
+          <Link
+            href={"/"}
+            onClick={() => {
+              setShowNavbar(!showNavbar);
+            }}
+          >
+            {" "}
+            Home
+          </Link>{" "}
         </li>
         <li className="hover:text-orange-secondary transition cursor-pointer">
           {" "}
