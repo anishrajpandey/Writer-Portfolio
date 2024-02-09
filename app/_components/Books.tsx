@@ -16,9 +16,9 @@ export default function Books() {
           Description={
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
           }
-          ImageFront={"/assets/books/lauhapurush_transparent.png"}
+          ImageFront={"/assets/photos/books/lauhapurush_transparent.png"}
           ImageBack={"/assets/photos/placeholder.JPG"}
-          URL={"/book/1/read"}
+          URL={"/book/2"}
         />
         {/* </ScrollAnimation> */}
         {/* <ScrollAnimation
@@ -31,9 +31,9 @@ export default function Books() {
           Description={
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
           }
-          ImageFront={"/assets/books/ironman_transparent.png"}
+          ImageFront={"/assets/photos/books/ironman_transparent.png"}
           ImageBack={"/assets/photos/placeholder.JPG"}
-          URL={"/book/1/read"}
+          URL={"/book/1"}
         />
         {/* </ScrollAnimation> */}
         {/* <ScrollAnimation
@@ -46,9 +46,9 @@ export default function Books() {
           Description={
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
           }
-          ImageFront={"/assets/books/janaandolan_transparent.png"}
+          ImageFront={"/assets/photos/books/janaandolan_transparent.png"}
           ImageBack={"/assets/photos/placeholder.JPG"}
-          URL={"/book/1/read"}
+          URL={"/book/1"}
         />
         {/* </ScrollAnimation> */}
         {/* <ScrollAnimation
@@ -63,7 +63,7 @@ export default function Books() {
           }
           ImageFront={"/assets/books/itihas_transparent.png"}
           ImageBack={"/assets/photos/placeholder.JPG"}
-          URL={"/book/1/read"}
+          URL={"/book/1"}
         />
         {/* </ScrollAnimation> */}
       </div>
