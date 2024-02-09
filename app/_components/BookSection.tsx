@@ -3,6 +3,7 @@ import Link from "next/link";
 import BookIcon from "../_globalComponents/icons/BookIcon";
 import ArrowIcon from "../_globalComponents/icons/ArrowIcon";
 import { DownloadIcon } from "lucide-react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const BookSection = ({
   BookName = "Iron Man",
@@ -28,28 +29,35 @@ const BookSection = ({
   return (
     <>
       <main className="">
-        <main className="bookSection grid md:grid-cols-3 grid-cols-1 mb-16  pb-10  px-12 gap-7">
+        <main className="bookSection grid md:grid-cols-3 grid-cols-1 mb-16  pb-10   px-12 gap-7">
           <div className="grid place-content-center col-span-1 ">
-            <div className="relative">
-              <div className="border-8  rounded-xl border-white w-fit">
-                <Image
-                  src={ImageBack}
-                  width={400}
-                  height={350}
-                  alt="cannot load image"
-                />
+            <ScrollAnimation animateOnce={true} animateIn="animate__fadeInLeft">
+              <div className="relative">
+                <div className="border-8  rounded-xl border-white w-fit">
+                  <Image
+                    src={ImageBack}
+                    width={400}
+                    height={350}
+                    alt="cannot load image"
+                  />
+                </div>
+                <div className="absolute -right-12 -bottom-12 w-fit ">
+                  <Image
+                    src={ImageFront}
+                    width={200}
+                    height={300}
+                    alt="cannot load image"
+                  />
+                </div>
               </div>
-              <div className="absolute -right-12 -bottom-12 w-fit ">
-                <Image
-                  src={ImageFront}
-                  width={200}
-                  height={300}
-                  alt="cannot load image"
-                />
-              </div>
-            </div>
+            </ScrollAnimation>
           </div>
-          <div className="right col-span-2  md:py-12 md:p-16 grid justify-between gap-3 ">
+          {/* <ScrollAnimation
+            animateOnce={true}
+            animateIn="animate__fadeInRight"
+            className="w-fit"
+          > */}
+          <div className="right  col-span-2 md:py-12 md:p-16 grid justify-between gap-3 ">
             <h2 className="uppercase text-lg font-serif tracking-wider text-black">
               BOOK NAME
             </h2>
@@ -81,6 +89,7 @@ const BookSection = ({
               </a>
             </div>
           </div>
+          {/* </ScrollAnimation> */}
         </main>
       </main>
     </>
