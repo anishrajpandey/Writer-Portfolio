@@ -5,7 +5,7 @@ export default function Intro() {
     <section className="h-screen mt-0 pt-0 w-screen  ">
       <div className="absolute -z-10 inset-0">
         <Image
-          src="/assets/photos/introbackground.jpg"
+          src="/assets/photos/introbackground.JPG"
           fill
           alt="Unable to load image"
           className="object-cover drop-shadow-md"
