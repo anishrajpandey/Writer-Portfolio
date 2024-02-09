@@ -32,7 +32,7 @@ export default function Books() {
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quas ut! Voluptatem fuga vel, iure modi at voluptates sunt atque pariatur."
           }
           ImageFront={"/assets/photos/books/ironman_transparent.png"}
-          ImageBack={"/assets/photos/placeholder.jpg"}
+          ImageBack={"/assets/photos/ironman_inaugration.jpg"}
           URL={"/book/1"}
         />
         {/* </ScrollAnimation> */}
