@@ -153,7 +153,9 @@ const Navbar = () => {
               <DropdownMenuLabel> Journalism</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem> Newspaper</DropdownMenuItem>
-              <DropdownMenuItem> Articles</DropdownMenuItem>
+              <Link href={"/journalism/articles"}>
+                <DropdownMenuItem> Articles</DropdownMenuItem>
+              </Link>
               <DropdownMenuItem> Columns</DropdownMenuItem>
               <DropdownMenuItem> Interviews</DropdownMenuItem>
             </DropdownMenuContent>

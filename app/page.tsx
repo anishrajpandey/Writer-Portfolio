@@ -12,13 +12,9 @@ export default function Home() {
       <Intro />
       <HeroSection />
 
-      {/* Books section */}
       <Books />
-      {/* </BubbleAnimation> */}
 
-      {/* about the author */}
       <AboutAuthor />
-      {/* Reviews */}
       <Title>reviews</Title>
       <h2 className="text-center m-0 p-0 text-lg sm:text-xl font-extralight text-faded tracking-wide uppercase">
         What Readers have to say
