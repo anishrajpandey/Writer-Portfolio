@@ -101,3 +101,6 @@ main.bookSection {
     rgba(239, 248, 250, 1) 100%
   ); */
 }
+.fadedCircle {
+  clip-path: circle(76.7% at 98% 79%);
+}

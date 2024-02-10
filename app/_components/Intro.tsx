@@ -1,8 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import "../globals.css";
+import { ChevronDown } from "lucide-react";
+
 export default function Intro() {
+  const handleScroll = () => {
+    window.scrollTo({ top: 600, behavior: "smooth" });
+  };
   return (
     <section className="h-screen mt-0 pt-0 w-screen  ">
+      <div
+        className="scrollbutton absolute left-1/2 bottom-0 animate-bounce cursor-pointer z-20 "
+        onClick={handleScroll}
+      >
+        {/* <ChevronDown /> */}
+        <ChevronDown size={70} color="white" strokeWidth={4} />
+      </div>
       <div className="absolute -z-10 inset-0">
         <Image
           src="/assets/photos/introbackground.JPG"
@@ -15,26 +28,20 @@ export default function Intro() {
         {/* <div className="relative w-32 md:w-1/2 h-64"> */}
         <Image
           src="/assets/photos/introimg.png"
-          width={500}
-          height={700}
+          width={450}
+          height={600}
           alt="Unable to load image"
           className="absolute bottom-0"
         ></Image>
         {/* </div> */}
-
-        <div className="right-4 h-[50vh] bottom-4 absolute  bg-black bg-opacity-45 text-white rounded-s-xl p-4 w-full md:w-1/2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, in quis
-          incidunt rerum blanditiis repellat, ex perspiciatis cum nisi natus
-          velit! Itaque molestias provident nisi possimus reiciendis non
-          sapiente doloremque vero repellendus culpa placeat expedita
-          cupiditate, fuga accusamus repudiandae consequatur fugit a quam
-          quaerat autem molestiae laudantium nesciunt eum tempora. Est ex
-          laudantium cum error ut repudiandae quaerat similique officiis quo
-          voluptate fugiat recusandae possimus, eveniet obcaecati esse soluta
-          incidunt fuga, doloremque, impedit vel. Suscipit ad, amet molestiae
-          itaque dolores temporibus dolorem quam, iusto tenetur numquam
-          excepturi maiores, laborum sequi nulla eos! Neque laborum ducimus sed
-          voluptates accusantium eveniet nesciunt.
+        <div className="absolute flex justify-end min-w-screen bg-black  md:bg-opacity-50 bg-opacity-70 right-0 px-2 md:px-4 h-screen items-end md:h-[47vh]  bottom-0  left-0 z-0 md:-z-10">
+          <div className=" px-2 md:px-4 h-[50vh]  bottom-0   pt-10   text-white  rounded-s-xl  w-full md:w-1/2 text-md sm:text-lg md:text-2xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, in
+            quis incidunt rerum blanditiis repellat, ex perspiciatis cum nisi
+            natus velit! Itaque molestias provident nisi possimus reiciendis non
+            sapiente doloremque vero repellendus culpa placeat expedita
+            cupiditate, fuga accusamus
+          </div>
         </div>
       </main>
     </section>
