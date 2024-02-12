@@ -20,6 +20,7 @@ export default function Books() {
           ImageBack={"/assets/photos/placeholder.jpg"}
           URL={"/books/2"}
           DownloadPath={"/assets/book-pdf/lauhapurush.pdf"}
+          available={true}
         />
         {/* </ScrollAnimation> */}
         {/* <ScrollAnimation
@@ -35,6 +36,7 @@ export default function Books() {
           ImageFront={"/assets/photos/books/ironman_transparent.png"}
           ImageBack={"/assets/photos/ironman_inaugration.jpg"}
           DownloadPath={"/assets/book-pdf/ironman.pdf"}
+          available={true}
           URL={"/books/1"}
         />
         {/* </ScrollAnimation> */}
@@ -51,11 +53,12 @@ export default function Books() {
           ImageFront={"/assets/photos/books/janaandolan_transparent.png"}
           ImageBack={"/assets/photos/placeholder.jpg"}
           URL={"/book/3"}
+          available={false}
           DownloadPath={""}
         />
         {/* </ScrollAnimation> */}
         {/* <ScrollAnimation
-          animateOnce={true}
+          animateOnce={false}
           delay={100}
           animateIn="animate__fadeInRight"
         > */}
@@ -67,6 +70,7 @@ export default function Books() {
           ImageFront={"/assets/photos/books/itihas_transparent.png"}
           ImageBack={"/assets/photos/placeholder.jpg"}
           URL={"/book/1"}
+          available={false}
           DownloadPath={""}
         />
         {/* </ScrollAnimation> */}

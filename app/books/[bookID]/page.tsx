@@ -146,6 +146,17 @@ export default function Page() {
         },
       ],
     },
+    {
+      BookName: "Kripalu Uddhhan",
+      BookID: 3,
+      Chapters: [
+        {
+          chapter: 1,
+          chapterName: "Introduction",
+          URL: "https://firebasestorage.googleapis.com/v0/b/visionventures-b8ed4.appspot.com/o/book-pdf%2FKripalu%20Udhan%20book.pdf?alt=media&token=421c2f46-96ec-4eac-b189-5c1192789745",
+        },
+      ],
+    },
   ];
 
   const [ShowSidebar, setShowSidebar] = useState(false);

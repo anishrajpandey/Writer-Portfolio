@@ -12,6 +12,7 @@ const BookSection = ({
   ImageFront = "/book1.png",
   URL = "/books/read",
   DownloadPath = "/assets/book-pdf/lauhapurush.pdf",
+  available,
 }: {
   BookName: String;
   Description: String;
@@ -19,6 +20,7 @@ const BookSection = ({
   ImageFront: any;
   URL: any;
   DownloadPath: any;
+  available: Boolean;
 }) => {
   //     const bookData = [{
   //          BookName: String;
@@ -66,10 +68,14 @@ const BookSection = ({
             <h1 className="text-xl md:text-4xl font-bold tracking-wide text-blue-primary uppercase ">
               {BookName}
             </h1>
+            {!available && (
+              <p className="text-red-600 text-lg font-bold">Coming Soon...</p>
+            )}
             <p className="text-faded text-md md:text-lg py-4">{Description}</p>
             <div className="flex gap-5 flex-wrap-reverse">
               <Link href={URL}>
                 <button
+                  disabled={!available}
                   type="button"
                   className="text-white bg-blue-secondary hover:bg-blue-primary px-4 py-3 text-xl font-bold width-max flex justify-center gap-2 items-center rounded-lg"
                 >
@@ -79,6 +85,7 @@ const BookSection = ({
               </Link>
               <a href={DownloadPath} download={BookName} target="_blank">
                 <button
+                  disabled={!available}
                   type="button"
                   className="text-white bg-orange-secondary hover:bg-orange-primary px-4 py-3 text-xl font-bold width-max flex justify-center gap-2 items-center rounded-lg"
                 >

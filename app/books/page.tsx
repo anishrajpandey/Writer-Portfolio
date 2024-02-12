@@ -33,6 +33,14 @@ const Book = () => {
           ImageURL={"/assets/photos/books/janaandolan.jpg"}
           RouteURL={"/books/4"}
         />
+        <BookCard
+          Title={"Kripalu Uddhhan"}
+          Description={
+            "lorem ipsum dolor sit comet apticum blah blah blahhlorem ipsum dolor sit comet apticum blah blah blahhlorem ipsum dolor sit comet apticum blah blah blahhlorem ipsum dolor sit comet apticum blah blah blahh"
+          }
+          ImageURL={"/assets/photos/books/kripalu.jpg"}
+          RouteURL={"/books/3"}
+        />
       </main>
     </main>
   );
