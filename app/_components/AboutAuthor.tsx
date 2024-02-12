@@ -7,7 +7,7 @@ import style from "./../../styles/Style.module.css";
 const AboutAuthor = () => {
   return (
     <>
-      <Title>About Author</Title>
+      <Title>Know Me</Title>
       <section className={`${styles.bgPattern} py-12`}>
         <main className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-12 min-h-[300px]  py-4 gap-2 justify-center items-center w-full md:w-9/12  mx-auto">
           <div className="  bg-gray-200 mx-auto relative min-h-[250px] rounded-lg overflow-hidden flex justify-end ">
@@ -31,16 +31,12 @@ const AboutAuthor = () => {
                 Ghanendra Purush Dhakal (घनेन्द्र पुरुष ढकाल){" "}
               </h2>
               <p className="text-sm  md:text-md text-faded">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
-                saepe laborum repudiandae quaerat. Totam beatae, voluptas nobis,
-                natus nesciunt reprehenderit incidunt repudiandae quos
-                temporibus aliquam placeat ipsam, doloremque unde quidem?
-                laborum repudiandae quaerat. Totam beatae, voluptas nobis, natus
-                nesciunt reprehenderit incidunt repudiandae quos temporibus
-                aliquam placeat ipsam, doloremque unde quidem? laborum
-                repudiandae quaerat. Totam beatae, voluptas nobis, natus
-                nesciunt reprehenderit incidunt repudiandae quos temporibus
-                aliquam placeat ipsam, doloremque unde quidem?
+                क्ष धभ तबपभ त्चयकतभचगम’क कगननभकतष्यल तजबत बत भिबकत तजयकभ
+                बिलनगबनभक धष्तज फ्यचभ तजबल ज्ञट,ण्ण्ण् कउभबपभचक कजयगमि दभ
+                धचष्ततभल, धभ ाष्लम तजबत धभ कजयगमि भहउभअत बिि बिलनगबनभक मयधल तय
+                बलम ष्लअगिमष्लन म्जष्फ्ब िकजयगमि दभ धचष्ततभलस तजष्क ष्क द्दड
+                बिलनगबनभक, वगकत गलमभच यलभ तजष्चम या तजभ बिलनगबनभक, ष्ल ष्लिभ
+                धष्तज तजभ उचयउयचतष्यल ष्ल तजभ उयउगबितष्यल या धयचमि बिलनगबनभक
               </p>
             </div>
             <div className="flex justify-end px-2 w-full ">

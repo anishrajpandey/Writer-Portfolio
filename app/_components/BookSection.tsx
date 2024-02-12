@@ -11,12 +11,14 @@ const BookSection = ({
   ImageBack = "/Event.JPG",
   ImageFront = "/book1.png",
   URL = "/books/read",
+  DownloadPath = "/assets/book-pdf/lauhapurush.pdf",
 }: {
   BookName: String;
   Description: String;
   ImageBack: any;
   ImageFront: any;
   URL: any;
+  DownloadPath: any;
 }) => {
   //     const bookData = [{
   //          BookName: String;
@@ -75,10 +77,7 @@ const BookSection = ({
                   <BookIcon />
                 </button>
               </Link>
-              <a
-                href="https://firebasestorage.googleapis.com/v0/b/visionventures-b8ed4.appspot.com/o/book-pdf%2FLauhapurus%20(1).pdf?alt=media&token=6e321487-1ca0-4daa-96c5-4723a56da2d7"
-                download
-              >
+              <a href={DownloadPath} download={BookName} target="_blank">
                 <button
                   type="button"
                   className="text-white bg-orange-secondary hover:bg-orange-primary px-4 py-3 text-xl font-bold width-max flex justify-center gap-2 items-center rounded-lg"
