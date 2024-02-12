@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import "../globals.css";
 import { ChevronDown } from "lucide-react";
+import Particles from "./Particles";
 
 export default function Intro() {
   const handleScroll = () => {
@@ -9,6 +10,7 @@ export default function Intro() {
   };
   return (
     <section className="relative h-like-screen mt-0 pt-0 w-screen">
+      {/* <Particles /> */}
       <div
         className="scrollbutton absolute left-1/2 bottom-0 animate-bounce cursor-pointer z-20 "
         onClick={handleScroll}

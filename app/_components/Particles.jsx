@@ -7,7 +7,7 @@ const Particles = () => {
     animation(canvasRef.current);
   }, []);
   return (
-    <div className="w-screen h-screen cursor-pointer">
+    <div className="w-screen h-screen cursor-pointer absolute -z-40">
       <canvas ref={canvasRef} id="canvas"></canvas>
     </div>
   );
@@ -31,7 +31,7 @@ function animation(canvas) {
 
   // Colors
   var colorPalette = {
-    bg: { r: 12, g: 9, b: 29 },
+    bg: { r: 2, g: 8, b: 23, a: 0.1 },
     matter: [
       { r: 36, g: 18, b: 42 }, // darkPRPL
       { r: 78, g: 36, b: 42 }, // rockDust
@@ -47,7 +47,8 @@ function animation(canvas) {
     drawBg,
     // Draws the background for the canvas, because space
     drawBg = function (ctx, color) {
-      ctx.fillStyle = "rgb(" + color.r + "," + color.g + "," + color.b + ")";
+      ctx.fillStyle =
+        "rgba(" + color.r + "," + color.g + "," + color.b + "," + color.a + ")";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
     };
 
