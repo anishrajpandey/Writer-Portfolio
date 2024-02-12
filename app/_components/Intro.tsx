@@ -36,7 +36,7 @@ export default function Intro() {
           className="absolute bottom-0"
         ></Image>
         {/* </div> */}
-        <div className="absolute flex justify-end min-w-screen bg-black  md:bg-opacity-50 bg-opacity-70  right-0 px-2 md:px-4 items-end md:h-[47vh]  bottom-0  left-0 z-0 md:-z-10">
+        <div className="absolute flex justify-end min-w-screen bg-fadeGradient  md:bg-opacity-50 bg-opacity-70  right-0 px-2 md:px-4 items-end md:h-[47vh]  bottom-0  left-0 z-0 md:-z-10">
           <div className=" px-2 md:px-4 h-[50vh]  bottom-0   pt-10 text-white  rounded-s-xl  w-full md:w-1/2 text-md sm:text-lg md:text-2xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, in
             quis incidunt rerum blanditiis repellat, ex perspiciatis cum nisi

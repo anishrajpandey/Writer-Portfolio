@@ -11,8 +11,8 @@ export default function HeroSection() {
       {/* <Particles /> */}
       <div className="left w-screen md:w-3/5  grid place-content-center scale-110">
         <div className="text-xl md:text-3xl font-bold text-faded  ">
-          <h1> Bestselling </h1>
-          <h1>Spirituality Author</h1>
+          <h1> National </h1>
+          <h1> Bestselling Author </h1>
         </div>
         <div>
           <h1 className="text-2xl md:text-4xl font-bold text-orange-primary uppercase">
