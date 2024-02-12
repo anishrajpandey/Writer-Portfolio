@@ -13,7 +13,6 @@
     "@material-tailwind/react": "^2.1.5",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-menubar": "^1.0.4",
-    "@react-three/x": "^9.88.4",
     "@react-three/fiber": "^8.15.16",
     "@splinetool/loader": "^1.0.50",
     "@splinetool/r3f-spline": "^1.0.2",
