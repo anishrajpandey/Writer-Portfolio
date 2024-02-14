@@ -29,10 +29,11 @@ function Mesh() {
     </mesh>
   );
 }
+
 export default function Cube() {
   return (
     <Canvas>
-      <OrbitControls enableZoom={false} />
+      {window.innerWidth >= 600 && <OrbitControls enableZoom={false} />}
       <ambientLight intensity={0.2} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       {/* <pointLight position={[-10, -10, -10]} /> */}

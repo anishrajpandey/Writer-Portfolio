@@ -9,7 +9,7 @@ import {
 import BookIcon from "@/app/_globalComponents/icons/BookIcon";
 import ArrowIcon from "@/app/_globalComponents/icons/ArrowIcon";
 import ShowPDF from "./_components/ShowPDF";
-import { useParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
@@ -140,7 +140,7 @@ export default function Page() {
           URL: "https://firebasestorage.googleapis.com/v0/b/visionventures-b8ed4.appspot.com/o/book-pdf%2Flauhapurush%2Flauhapurush-383-404.pdf?alt=media&token=71f897e8-e1a2-4578-839a-bcfefce667e6",
         },
         {
-          chapter: 10,
+          chapter: 12,
           chapterName: "एसै पुस्तक्बाट",
           URL: "https://firebasestorage.googleapis.com/v0/b/visionventures-b8ed4.appspot.com/o/book-pdf%2Flauhapurush%2Flauhapurush-405-408.pdf?alt=media&token=d7350a80-4584-45ef-b801-3f2d209626ba",
         },
@@ -159,6 +159,9 @@ export default function Page() {
     },
   ];
 
+  let SearchParams = useSearchParams();
+  let chapter = SearchParams.get("chap");
+  console.log(chapter);
   const [ShowSidebar, setShowSidebar] = useState(false);
   const [PDFURL, setPDFURL] = useState(
     "https://firebasestorage.googleapis.com/v0/b/visionventures-b8ed4.appspot.com/o/book-pdf%2Fplaceholder.pdf?alt=media&token=16eb75f7-9f43-4ef3-8b1e-17cc54a8d241"
@@ -167,11 +170,20 @@ export default function Page() {
   let { bookID } = params;
   const bookIDInteger = +bookID;
   let filteredBook = BookData.filter((book) => book.BookID === bookIDInteger);
-  // console.log("🤔 > Page > filteredBook:", filteredBook);
 
   useEffect(() => {
+    let chap: any = SearchParams.get("chap");
+    chap = +chap;
+    console.log(chapter);
+    let [chapterData] = filteredBook[0].Chapters.filter(
+      ({ chapter }) => chapter == chap
+    );
+    // console.log(chapterData.URL);
+    setPDFURL(chapterData.URL);
+
+    // setPDFURL(BookData.find())
     // console.log(filteredBook);
-  });
+  }, []);
 
   // const [SelectedBook, setSelectedBook] = useState({Book:1,ID})
   return (

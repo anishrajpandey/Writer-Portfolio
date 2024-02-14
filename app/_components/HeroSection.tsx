@@ -9,9 +9,9 @@ export default function HeroSection() {
   return (
     <main className=" bg-opacity-10 bg-[rgb(153,255,250)]  bg-no-repeat relative bg-cover ml-0 min-h-screen w-screen flex flex-col md:flex-row  ">
       {/* <Particles /> */}
-      <div className="left w-screen md:w-3/5  grid place-content-center scale-110">
+      <div className="left w-screen md:w-3/5 pt-40 md:pt-2 grid place-content-center scale-110">
         <div className="text-xl md:text-3xl font-bold text-faded  ">
-          <h1> National </h1>
+          {/* <h1> National </h1> */}
           <h1> Bestselling Author </h1>
         </div>
         <div>

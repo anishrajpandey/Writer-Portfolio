@@ -4,45 +4,47 @@ import React from "react";
 
 const Book = () => {
   return (
-    <main className="bg-orange-10  ">
+    <>
       <h2 className="text-left px-12 text-2xl pt-8 md:text-5xl font-bold tracking-tight text-gray-900">
         Published Books{" "}
       </h2>
-      <main className="w-screen grid grid-cols-1 md:grid-cols-4 gap-7 px-12 place-content-center pt-6 pb-12 justify-center">
-        <BookCard
-          Title={"Ironman"}
-          Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/assets/photos/books/ironman.jpg"}
-          RouteURL={"/books/1"}
-        />
-        <BookCard
-          Title={"Lauha Purush"}
-          Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/assets/photos/books/lauhapurush.jpg"}
-          RouteURL={"/books/2"}
-        />
-        <BookCard
-          Title={"Itihas"}
-          Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/assets/photos/books/itihas.jpg"}
-          RouteURL={"/books/3"}
-        />
-        <BookCard
-          Title={"Jana Andalon"}
-          Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
-          ImageURL={"/assets/photos/books/janaandolan.jpg"}
-          RouteURL={"/books/4"}
-        />
-        <BookCard
-          Title={"Kripalu Uddhhan"}
-          Description={
-            "lorem ipsum dolor sit comet apticum blah blah blahhlorem ipsum dolor sit comet apticum blah blah blahhlorem ipsum dolor sit comet apticum blah blah blahhlorem ipsum dolor sit comet apticum blah blah blahh"
-          }
-          ImageURL={"/assets/photos/books/kripalu.jpg"}
-          RouteURL={"/books/3"}
-        />
+      <main className="   ">
+        <main className="w-screen  grid grid-cols-1 md:grid-cols-3 gap-7 px-12 place-content-center pt-6 pb-12 justify-center">
+          <BookCard
+            Title={"Ironman"}
+            Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
+            ImageURL={"/assets/photos/books/ironman.jpg"}
+            RouteURL={"/books/1"}
+          />
+          <BookCard
+            Title={"Lauha Purush"}
+            Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
+            ImageURL={"/assets/photos/books/lauhapurush.jpg"}
+            RouteURL={"/books/2"}
+          />
+          <BookCard
+            Title={"Itihas"}
+            Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
+            ImageURL={"/assets/photos/books/itihas.jpg"}
+            RouteURL={"/books/3"}
+          />
+          <BookCard
+            Title={"Jana Andalon"}
+            Description={"lorem ipsum dolor sit comet apticum blah blah blahh"}
+            ImageURL={"/assets/photos/books/janaandolan.jpg"}
+            RouteURL={"/books/4"}
+          />
+          <BookCard
+            Title={"Kripalu Uddhhan"}
+            Description={
+              "lorem ipsum dolor sit comet apticum blah blah blahhlorem ipsum dolor sit comet apticum blah blah blahhlorem ipsum dolor sit comet apticum blah blah blahhlorem ipsum dolor sit comet apticum blah blah blahh"
+            }
+            ImageURL={"/assets/photos/books/kripalu.jpg"}
+            RouteURL={"/books/3"}
+          />
+        </main>
       </main>
-    </main>
+    </>
   );
 };
 function BookCard({
