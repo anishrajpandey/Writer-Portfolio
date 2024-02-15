@@ -19,9 +19,6 @@ import { useEffect, useState } from "react";
 import { cameraLogDepth } from "three/examples/jsm/nodes/Nodes.js";
 
 const Navbar = () => {
-  useEffect(() => {
-    console.log(BookData);
-  });
   const [showNavbar, setShowNavbar] = useState(false);
   return (
     <nav
@@ -46,7 +43,7 @@ const Navbar = () => {
       </div>
       <ul
         className={cn(
-          "flex flex-col text-lg font-semibold fixed -left-full px-4 pt-8 sm:pt-0 sm:px-12 top-0  sm:w-fit sm:inset-0 bg-blue-primary z-20 w-screen sm:bg-transparent sm:relative sm:flex-row gap-4 h-full sm:items-center transition duration-100 min-w-fit mobileNav",
+          "flex flex-col text-lg font-semibold fixed -left-full px-4 pt-8 sm:pt-0 sm:px-12 top-0  sm:w-fit sm:inset-0 backdrop-blur-xl z-20 w-screen sm:bg-transparent sm:relative sm:flex-row gap-4 h-full sm:items-center transition duration-100 min-w-fit mobileNav",
           {
             "left-0": showNavbar,
           }
@@ -84,6 +81,9 @@ const Navbar = () => {
                         ({ chapter, URL, chapterName }, index) => {
                           return (
                             <Link
+                              onClick={() => {
+                                setShowNavbar(!showNavbar);
+                              }}
                               href={`/books/${book.BookID}?chap=${index + 1}`}
                               key={chapter}
                             >
@@ -107,12 +107,22 @@ const Navbar = () => {
             <DropdownMenuContent>
               <DropdownMenuLabel> Journalism</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem> Newspaper</DropdownMenuItem>
-              <Link href={"/journalism/articles"}>
-                <DropdownMenuItem> Articles</DropdownMenuItem>
+              <Link
+                href={"/journalism/articles"}
+                onClick={() => {
+                  setShowNavbar(!showNavbar);
+                }}
+              >
+                <DropdownMenuItem>Articles</DropdownMenuItem>
               </Link>
-              <DropdownMenuItem> Columns</DropdownMenuItem>
-              <DropdownMenuItem> Interviews</DropdownMenuItem>
+              <Link
+                href={"/journalism/interviews"}
+                onClick={() => {
+                  setShowNavbar(!showNavbar);
+                }}
+              >
+                <DropdownMenuItem>Interviews</DropdownMenuItem>
+              </Link>
             </DropdownMenuContent>
           </DropdownMenu>
         </li>
@@ -123,11 +133,63 @@ const Navbar = () => {
             <DropdownMenuContent>
               <DropdownMenuLabel> Activities</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem> Ganeshman Singh Foundation</DropdownMenuItem>
-              <DropdownMenuItem> Bankali Garden</DropdownMenuItem>
-              <DropdownMenuItem> Social Service</DropdownMenuItem>
-              <DropdownMenuItem> Trainings</DropdownMenuItem>
-              <DropdownMenuItem> Spirituality</DropdownMenuItem>
+
+              <DropdownMenuSub>
+                <DropdownMenuSubTrigger>
+                  <span> Political</span>
+                </DropdownMenuSubTrigger>
+                <DropdownMenuPortal>
+                  <DropdownMenuSubContent>
+                    <DropdownMenuItem>
+                      <span>Political Actiivty 1</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <span>Political Actiivty 2</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <span>Political Actiivty 2</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <span>Political Actiivty 4</span>
+                    </DropdownMenuItem>
+                  </DropdownMenuSubContent>
+                </DropdownMenuPortal>
+              </DropdownMenuSub>
+
+              <DropdownMenuSub>
+                <DropdownMenuSubTrigger>
+                  <span> Spiritual</span>
+                </DropdownMenuSubTrigger>
+                <DropdownMenuPortal>
+                  <DropdownMenuSubContent>
+                    <DropdownMenuItem>
+                      <span>Spiritual Actiivty 1</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <span>Spiritual Actiivty 2</span>
+                    </DropdownMenuItem>
+                  </DropdownMenuSubContent>
+                </DropdownMenuPortal>
+              </DropdownMenuSub>
+
+              <DropdownMenuSub>
+                <DropdownMenuSubTrigger>
+                  <span> Education and Training</span>
+                </DropdownMenuSubTrigger>
+                <DropdownMenuPortal>
+                  <DropdownMenuSubContent>
+                    <DropdownMenuItem>
+                      <span>Education and Training Actiivty 1</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <span>Education and Training Actiivty 2</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <span>Education and Training Actiivty 2</span>
+                    </DropdownMenuItem>
+                  </DropdownMenuSubContent>
+                </DropdownMenuPortal>
+              </DropdownMenuSub>
             </DropdownMenuContent>
           </DropdownMenu>
         </li>
