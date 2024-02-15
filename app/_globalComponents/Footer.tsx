@@ -9,7 +9,7 @@ const Footer = () => {
     >
       <aside>
         <Image
-          src={"/ghanendra.JPG"}
+          src={"/assets/photos/ghanendra2.JPG"}
           width={100}
           height={200}
           className="rounded-[50%] object-cover w-32 h-32"

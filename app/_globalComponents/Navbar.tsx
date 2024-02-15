@@ -39,7 +39,12 @@ const Navbar = () => {
           setShowNavbar(!showNavbar);
         }}
       >
-        <Image src={"/hamMenu.png"} width={40} height={40} alt="ham icon" />
+        <Image
+          src={"/assets/files/hamMenu.png"}
+          width={40}
+          height={40}
+          alt="ham icon"
+        />
       </div>
       <ul
         className={cn(
