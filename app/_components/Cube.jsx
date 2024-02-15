@@ -1,7 +1,7 @@
 "use client";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { Suspense, useRef } from "react";
+import { Suspense, useRef, useState } from "react";
 
 import { TextureLoader } from "three";
 function Mesh() {
@@ -31,9 +31,11 @@ function Mesh() {
 }
 
 export default function Cube() {
+  let isMobile = window.innerWidth >= 600;
+
   return (
     <Canvas>
-      {window.innerWidth >= 600 && <OrbitControls enableZoom={false} />}
+      {isMobile && <OrbitControls enableZoom={false} />}
       <ambientLight intensity={0.2} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       {/* <pointLight position={[-10, -10, -10]} /> */}
