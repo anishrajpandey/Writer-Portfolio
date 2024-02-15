@@ -1,7 +1,7 @@
 "use client";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { Suspense, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 
 import { TextureLoader } from "three";
 function Mesh() {
@@ -31,7 +31,10 @@ function Mesh() {
 }
 
 export default function Cube() {
-  let isMobile = window.innerWidth >= 600;
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    setIsMobile(window.innerWidth >= 600);
+  }, []);
 
   return (
     <Canvas>
