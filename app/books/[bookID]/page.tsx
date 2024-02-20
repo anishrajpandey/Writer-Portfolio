@@ -86,7 +86,10 @@ export default function Page() {
               <ListItemPrefix placeholder={""}>
                 <BookIcon />{" "}
               </ListItemPrefix>
-              {chapter.chapterName}
+              <div className="flex justify-center items-center gap-1">
+                <span className="font-semibold">{chapter.chapter}.</span>
+                {chapter.chapterName}
+              </div>
             </ListItem>
           );
         })}

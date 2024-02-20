@@ -5,39 +5,22 @@ const page = () => {
   const interviewData = [
     {
       id: 1,
-      title: "Tu aisa kaise hei",
-      src: "https://youtube.com/embed/ecyZIxKdiFM",
-      date: "23rd February 2024",
+      title: "Talk Show Ghanendra Purush Dhakal Part 1",
+      src: "https://youtube.com/embed/1d48ZUIgagk",
+      date: " Sep 7, 2012",
     },
     {
       id: 2,
-      title: "Tu aisa kaise hei",
-      src: "https://youtube.com/embed/ecyZIxKdiFM",
-      date: "23rd February 2024",
+      title: "Ep 29 Talk Show Ghanendra Purush Dhakal Part 2",
+      src: "https://youtube.com/embed/zd7cyEzvDJY",
+      date: "Sep 7, 2012",
     },
+
     {
       id: 3,
-      title: "Tu aisa kaise hei",
-      src: "https://youtube.com/embed/ecyZIxKdiFM",
-      date: "23rd February 2024",
-    },
-    {
-      id: 4,
-      title: "Tu aisa kaise hei",
-      src: "https://youtube.com/embed/ecyZIxKdiFM",
-      date: "23rd February 2024",
-    },
-    {
-      id: 5,
-      title: "Tu aisa kaise hei",
-      date: "23rd February 2024",
-      src: "https://youtube.com/embed/ecyZIxKdiFM",
-    },
-    {
-      id: 6,
-      title: "Tu aisa kaise hei",
-      src: "https://youtube.com/embed/ecyZIxKdiFM",
-      date: "23rd February 2024",
+      title: "The Life and Values of Ganesh Man Singh",
+      src: "https://youtube.com/embed/8VBAHBjq7ig",
+      date: "  Nov 19, 2023 ",
     },
   ];
 
