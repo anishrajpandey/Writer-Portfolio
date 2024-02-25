@@ -141,7 +141,7 @@ const Navbar = () => {
 
               <DropdownMenuSub>
                 <DropdownMenuSubTrigger>
-                  <span> Political</span>
+                  <span> Political Involvement</span>
                 </DropdownMenuSubTrigger>
                 <DropdownMenuPortal>
                   <DropdownMenuSubContent>
@@ -163,15 +163,17 @@ const Navbar = () => {
 
               <DropdownMenuSub>
                 <DropdownMenuSubTrigger>
-                  <span> Spiritual</span>
+                  <span> Social Involvement</span>
                 </DropdownMenuSubTrigger>
                 <DropdownMenuPortal>
                   <DropdownMenuSubContent>
+                    <Link href={"/activities/social?item=gmsf"}>
+                      <DropdownMenuItem>
+                        <span>GaneshMan Singh Foundation (GMSF)</span>
+                      </DropdownMenuItem>
+                    </Link>
                     <DropdownMenuItem>
-                      <span>Spiritual Actiivty 1</span>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      <span>Spiritual Actiivty 2</span>
+                      <span>Radha Madhav</span>
                     </DropdownMenuItem>
                   </DropdownMenuSubContent>
                 </DropdownMenuPortal>
@@ -179,12 +181,24 @@ const Navbar = () => {
 
               <DropdownMenuSub>
                 <DropdownMenuSubTrigger>
+                  <span> Spiritual Activities</span>
+                </DropdownMenuSubTrigger>
+                <DropdownMenuPortal>
+                  <DropdownMenuSubContent>
+                    <DropdownMenuItem>
+                      <span>Actiivty 1</span>
+                    </DropdownMenuItem>
+                  </DropdownMenuSubContent>
+                </DropdownMenuPortal>
+              </DropdownMenuSub>
+              <DropdownMenuSub>
+                <DropdownMenuSubTrigger>
                   <span> Education and Training</span>
                 </DropdownMenuSubTrigger>
                 <DropdownMenuPortal>
                   <DropdownMenuSubContent>
                     <DropdownMenuItem>
-                      <span>Education and Training Actiivty 1</span>
+                      <span>Asal Nagarik Banau</span>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
                       <span>Education and Training Actiivty 2</span>

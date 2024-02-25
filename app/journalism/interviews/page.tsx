@@ -22,6 +22,13 @@ const page = () => {
       src: "https://youtube.com/embed/8VBAHBjq7ig",
       date: "  Nov 19, 2023 ",
     },
+    {
+      id: 4,
+      title:
+        "गणेशमान सिंहले सोचेजस्तो काङ्ग्रेस बन्न सकेन | घनेन्द्रपुरुष ढकाल, लेखक तथा विश्लेषक",
+      src: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fomkartv%2Fvideos%2F2498240423656578%2F&show_text=false&width=560&t=0",
+      date: " April 23, 2023 ",
+    },
   ];
 
   return (
