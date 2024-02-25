@@ -14,7 +14,7 @@ export default function Home() {
 
       <Books />
 
-      <AboutAuthor />
+      {/* <AboutAuthor /> */}
       <Title>reviews</Title>
       <h2 className="text-center m-0 p-0 text-lg sm:text-xl font-extralight text-faded tracking-wide uppercase">
         What Readers have to say

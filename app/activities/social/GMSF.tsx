@@ -5,7 +5,7 @@ import TextComponent from "../_components/TextComponent";
 import Particles from "@/app/_components/Particles";
 import BubbleAnimation from "@/app/_globalComponents/BubbleAnimation";
 
-const GMSF = ({ children }: { children: any }) => {
+const GMSF = () => {
   return (
     <main className="w-screen md:w-[80vw] mx-auto  py-8 px-2 md:px-6 ">
       <a href="https://ganeshmansinghfoundation.org/">
