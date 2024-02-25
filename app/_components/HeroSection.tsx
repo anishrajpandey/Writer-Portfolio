@@ -9,9 +9,8 @@ export default function HeroSection() {
   return (
     <main className=" bg-opacity-10 bg-[rgb(153,255,250)]  bg-no-repeat relative bg-cover ml-0 min-h-screen w-screen flex flex-col md:flex-row  ">
       {/* <Particles /> */}
-      <div className="left w-screen md:w-3/5 pt-40 md:pt-2 grid place-content-center scale-110">
-        <div className="text-xl md:text-3xl font-bold text-faded  ">
-          {/* <h1> National </h1> */}
+      <div className="left bg-green-400 w-screen md:w-3/5 pt-40 md:pt-2 grid place-content-center ">
+        {/* <div className="text-xl md:text-3xl font-bold text-faded  ">
           <h1> Bestselling Author </h1>
         </div>
         <div>
@@ -21,10 +20,10 @@ export default function HeroSection() {
           <h1 className="text-2xl md:text-4xl font-bold text-orange-primary uppercase ">
             Purush Dhakal
           </h1>
-        </div>
-        <div className="my-3">
+        </div> */}
+        <div className="my-3 bg-red-700">
           <p className="text-md md:text-lg text-faded-light">
-            Writer of Jana Andolan and Iron Man
+            Writer of Jana Andolan and Iron Man Lorem
           </p>
         </div>
         <div className="btns flex gap-3 text-white">
@@ -44,11 +43,8 @@ export default function HeroSection() {
         {/* <Scene /> */}
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 text-white">
-        <Marquee>
-          I can be a React component, multiple React components, or just some
-          text.
-        </Marquee>
+      <div className="absolute bottom-0 left-0 right-0 text-faded">
+        <Marquee>Jana Andolan || Iron Man || Lauha Purush</Marquee>
       </div>
     </main>
   );

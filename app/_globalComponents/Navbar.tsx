@@ -211,7 +211,7 @@ const Navbar = () => {
                       href={"/activities/education?item=asalnagrik"}
                     >
                       <DropdownMenuItem>
-                        <span>Asal Nagarik Banau</span>
+                        <span>असल नागरिक बनौं</span>
                       </DropdownMenuItem>
                     </Link>
                     <DropdownMenuItem>
