@@ -8,7 +8,7 @@ export default function TextComponent({
   Description: String;
 }) {
   return (
-    <article className="w-full h-fit my-3">
+    <article className="w-full h-fit my-14">
       <h2 className="text-lg md:text-xl text-faded  font-semibold text-left ">
         {Title}
       </h2>

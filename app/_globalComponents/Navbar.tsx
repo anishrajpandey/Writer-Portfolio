@@ -16,7 +16,6 @@ import BookData from "@/public/data/BookData";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { cameraLogDepth } from "three/examples/jsm/nodes/Nodes.js";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -26,12 +25,20 @@ const Navbar = () => {
         "flex justify-between sm:justify-normal gap-4 sm:gap-56 w-screen h-16 items-center fixed z-50  top-0  bg-white"
       }
     >
-      <div className="logoContainer flex items-center p-2">
-        <div className="relative w-12 h-12 pb-4">
-          <Image src={"/assets/files/logo.svg"} fill alt="logo" />
+      <Link
+        href={"/"}
+        onClick={() => {
+          setShowNavbar(!showNavbar);
+        }}
+        className="cursor-pointer"
+      >
+        <div className="logoContainer flex items-center p-2">
+          <div className="relative w-12 h-12 pb-4">
+            <Image src={"/assets/files/logo.svg"} fill alt="logo" />
+          </div>
+          <h2 className="font-bold ">Ghanendra Purush Dhakal</h2>
         </div>
-        <h2 className="font-bold ">Ghanendra Purush Dhakal</h2>
-      </div>
+      </Link>
 
       <div
         className=" sm:hidden self-end h-full flex items-center  mr-4 z-50"
@@ -197,9 +204,16 @@ const Navbar = () => {
                 </DropdownMenuSubTrigger>
                 <DropdownMenuPortal>
                   <DropdownMenuSubContent>
-                    <DropdownMenuItem>
-                      <span>Asal Nagarik Banau</span>
-                    </DropdownMenuItem>
+                    <Link
+                      onClick={() => {
+                        setShowNavbar(!showNavbar);
+                      }}
+                      href={"/activities/education?item=asalnagrik"}
+                    >
+                      <DropdownMenuItem>
+                        <span>Asal Nagarik Banau</span>
+                      </DropdownMenuItem>
+                    </Link>
                     <DropdownMenuItem>
                       <span>Education and Training Actiivty 2</span>
                     </DropdownMenuItem>
