@@ -19,7 +19,7 @@ const Page = () => {
       id: 1,
       title: "Article Title",
       url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article1.JPG",
+      imageSource: "/assets/files/Article1.jpg",
       date: "23rd February 2024",
     },
     {
