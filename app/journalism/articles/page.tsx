@@ -16,8 +16,8 @@ const Page = () => {
       Image: "/assets/files/Article1.jpg",
       show: false,
     });
-  });
-  function changePagenumber() {}
+  }, []);
+  // function changePagenumber() {}
 
   return (
     <section className="w-screen md:w-[70vw] 12 mx-auto flex flex-col gap-20 ">
@@ -71,16 +71,16 @@ const Page = () => {
           1
         </div>
         <div
-          className={`w-4 h-4 bg-gray-300${
+          className={`w-4 h-4 bg-gray-300 ${
             page == "2" && "bg-blue-400"
           } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           2
         </div>
         <div
-          className={`w-4 h-4 bg-gray-300 ${
+          className={`w-4 h-4  ${
             page == "3" && "bg-blue-400"
-          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+          } bg-gray-300 hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           3
         </div>
