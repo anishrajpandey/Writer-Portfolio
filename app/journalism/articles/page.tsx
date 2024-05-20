@@ -3,95 +3,21 @@ import Modal from "@/app/_globalComponents/Modal";
 import Title from "@/app/_globalComponents/Title";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
+import ArticlesData from "./ArticlesData.json";
+import { useSearchParams } from "next/navigation";
 const Page = () => {
   const [ModalData, setModalData] = useState({});
+  let params = useSearchParams();
+  let page = params.get("page");
+
   useEffect(() => {
     setModalData({
       Title: "This is some title",
       Image: "/assets/files/Article1.jpg",
       show: false,
     });
-  }, []);
-
-  const ArticlesData = [
-    {
-      id: 1,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article1.jpg",
-      date: "23rd February 2024",
-    },
-    {
-      id: 2,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article2.jpg",
-      date: "23rd February 2024",
-    },
-    {
-      id: 3,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article3.jpg",
-      date: "23rd February 2024",
-    },
-    {
-      id: 4,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article4.jpg",
-      date: "23rd February 2024",
-    },
-    {
-      id: 5,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article5.jpg",
-    },
-    {
-      id: 6,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article6.jpg",
-      date: "23rd February 2024",
-    },
-    {
-      id: 7,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article7.jpg",
-      date: "23rd February 2024",
-    },
-    {
-      id: 8,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article8.jpg",
-      date: "23rd February 2024",
-    },
-    {
-      id: 9,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article9.jpg",
-      date: "23rd February 2024",
-    },
-    {
-      id: 10,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article10.jpg",
-      date: "23rd February 2024",
-    },
-    {
-      id: 11,
-      title: "Article Title",
-      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-      imageSource: "/assets/files/Article11.jpg",
-      date: "23rd February 2024",
-    },
-  ];
+  });
+  function changePagenumber() {}
 
   return (
     <section className="w-screen md:w-[70vw] 12 mx-auto flex flex-col gap-20 ">
@@ -132,6 +58,82 @@ const Page = () => {
           </div>
         </article>
       ))}
+
+      {/* page numbers section*/}
+
+      <div className="flex gap-x-2 justify-center items-center mb-3 ">
+        <b>Page Number:</b>
+        <div
+          className={`w-4 h-4 bg-gray-300 ${
+            page == "1" && "bg-blue-400"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+        >
+          1
+        </div>
+        <div
+          className={`w-4 h-4 bg-gray-300${
+            page == "2" && "bg-blue-400"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+        >
+          2
+        </div>
+        <div
+          className={`w-4 h-4 bg-gray-300 ${
+            page == "3" && "bg-blue-400"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+        >
+          3
+        </div>
+        <div
+          className={`w-4 h-4 bg-gray-300 ${
+            page == "4" && "bg-blue-400"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+        >
+          4
+        </div>
+        <div
+          className={`w-4 h-4 bg-gray-300 ${
+            page == "5" && "bg-blue-400"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+        >
+          5
+        </div>
+        <div
+          className={`w-4 h-4 bg-gray-300 ${
+            page == "6" && "bg-blue-400"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+        >
+          6
+        </div>
+        <div
+          className={`w-4 h-4 bg-gray-300 ${
+            page == "7" && "bg-blue-400"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+        >
+          7
+        </div>
+        <div
+          className={`w-4 h-4 bg-gray-300 ${
+            page == "8" && "bg-blue-400"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+        >
+          8
+        </div>
+        <div
+          className={`w-4 h-4 bg-gray-300 ${
+            page == "9" && "bg-blue-400"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+        >
+          9
+        </div>
+        <div
+          className={`w-4 h-4 bg-gray-300 ${
+            page == "10" && "bg-blue-400"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+        >
+          10
+        </div>
+      </div>
     </section>
   );
   //   todo insert youtube links

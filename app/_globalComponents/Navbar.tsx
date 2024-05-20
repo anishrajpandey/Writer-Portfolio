@@ -120,7 +120,7 @@ const Navbar = () => {
               <DropdownMenuLabel> Journalism</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <Link
-                href={"/journalism/articles"}
+                href={"/journalism/articles?page=1"}
                 onClick={() => {
                   setShowNavbar(!showNavbar);
                 }}
