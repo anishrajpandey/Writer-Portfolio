@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 import ArticlesData from "./ArticlesData.json";
 import { useSearchParams } from "next/navigation";
 const Page = () => {
-  const [ModalData, setModalData] = useState({});
   let params = useSearchParams();
-  let page = params.get("page");
+  const [ModalData, setModalData] = useState({});
+  const [PageNumber, setPageNumber] = useState(params.get("page"));
 
   useEffect(() => {
     setModalData({
@@ -16,6 +16,7 @@ const Page = () => {
       Image: "/assets/files/Article1.jpg",
       show: false,
     });
+    console.log(PageNumber);
   }, []);
   // function changePagenumber() {}
 
@@ -64,71 +65,71 @@ const Page = () => {
       <div className="flex gap-x-2 justify-center items-center mb-3 ">
         <b>Page Number:</b>
         <div
-          className={`w-4 h-4 bg-gray-300 ${
-            page == "1" && "bg-blue-400"
+          className={`w-4 h-4  ${
+            PageNumber == "1" ? "bg-blue-400" : "bg-gray-300"
           } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           1
         </div>
         <div
-          className={`w-4 h-4 bg-gray-300 ${
-            page == "2" && "bg-blue-400"
+          className={`w-4 h-4  ${
+            PageNumber == "2" ? "bg-blue-400" : "bg-gray-300"
           } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           2
         </div>
         <div
           className={`w-4 h-4  ${
-            page == "3" && "bg-blue-400"
-          } bg-gray-300 hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
+            PageNumber == "3" ? "bg-blue-400" : "bg-gray-300"
+          } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           3
         </div>
         <div
-          className={`w-4 h-4 bg-gray-300 ${
-            page == "4" && "bg-blue-400"
+          className={`w-4 h-4  ${
+            PageNumber == "4" ? "bg-blue-400" : "bg-gray-300"
           } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           4
         </div>
         <div
-          className={`w-4 h-4 bg-gray-300 ${
-            page == "5" && "bg-blue-400"
+          className={`w-4 h-4 ${
+            PageNumber == "5" ? "bg-blue-400" : "bg-gray-300"
           } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           5
         </div>
         <div
-          className={`w-4 h-4 bg-gray-300 ${
-            page == "6" && "bg-blue-400"
+          className={`w-4 h-4 ${
+            PageNumber == "6" ? "bg-blue-400" : "bg-gray-300"
           } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           6
         </div>
         <div
-          className={`w-4 h-4 bg-gray-300 ${
-            page == "7" && "bg-blue-400"
+          className={`w-4 h-4 ${
+            PageNumber == "7" ? "bg-blue-400" : "bg-gray-300"
           } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           7
         </div>
         <div
-          className={`w-4 h-4 bg-gray-300 ${
-            page == "8" && "bg-blue-400"
+          className={`w-4 h-4 ${
+            PageNumber == "8" ? "bg-blue-400" : "bg-gray-300"
           } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           8
         </div>
         <div
-          className={`w-4 h-4 bg-gray-300 ${
-            page == "9" && "bg-blue-400"
+          className={`w-4 h-4 ${
+            PageNumber == "9" ? "bg-blue-400" : "bg-gray-300"
           } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           9
         </div>
         <div
-          className={`w-4 h-4 bg-gray-300 ${
-            page == "10" && "bg-blue-400"
+          className={`w-4 h-4 ${
+            PageNumber == "10" ? "bg-blue-400" : "bg-gray-300"
           } hover:bg-blue-400 cursor-pointer p-4 grid place-content-center`}
         >
           10
