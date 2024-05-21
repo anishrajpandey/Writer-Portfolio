@@ -8,7 +8,16 @@ import { useSearchParams } from "next/navigation";
 const Page = () => {
   let params = useSearchParams();
   const [ModalData, setModalData] = useState({});
-  const [PageNumber, setPageNumber] = useState(params.get("page"));
+  const [PageNumber, setPageNumber] = useState(params.get("page") || 1);
+  const [ArticlesToShow, setArticlesToShow] = useState([
+    {
+      id: 1,
+      title: "Article Title",
+      url: "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
+      imageSource: "/assets/files/Article1.jpg",
+      date: "23rd February 2024",
+    },
+  ]);
 
   useEffect(() => {
     setModalData({
@@ -17,14 +26,20 @@ const Page = () => {
       show: false,
     });
     console.log(PageNumber);
-  }, []);
+
+    let newArticle = ArticlesData.filter(({ id }) => {
+      return id >= +PageNumber && id <= +PageNumber * 10;
+    });
+    setArticlesToShow([...newArticle]);
+  }, [PageNumber]);
+
   // function changePagenumber() {}
 
   return (
     <section className="w-screen md:w-[70vw] 12 mx-auto flex flex-col gap-20 ">
       <Title>Articles</Title>
       <Modal ModalData={ModalData} setModalData={setModalData} />
-      {ArticlesData.map(({ id, title, imageSource, date, url }) => (
+      {ArticlesToShow.map(({ id, title, imageSource, date, url }) => (
         <article className="flex flex-col items-center shadow-xl" key={id}>
           <header className="w-full flex gap-5 justify-between items-center pb-2">
             <h1 className="text-lg md:text-xl text-faded font-semibold ">
