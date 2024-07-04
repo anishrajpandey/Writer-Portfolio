@@ -9,41 +9,41 @@ const Data = [
   {
     id: 1,
     Testimonial:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
-    Name: "Mr. Sam Altman",
-    Post: "Someone Big",
+      "घनेन्द्र पुरुष ढकालको लेखनशैलीले हाम्रो साहित्यलाई नयाँ आयाम दिएको छ। उहाँका कथाहरूमा जीवनका विभिन्न रंग र भावनाको सुन्दर चित्रण पाउन सकिन्छ। उहाँको शब्दचयन र शैली अद्वितीय छ।",
+    Name: "श्री हेमन्त शर्मा",
+    Post: "",
     ImageName: "ghanendra.JPG",
   },
   {
     id: 2,
     Testimonial:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
-    Name: "Mr. Sam Altman",
-    Post: "Someone Big",
+      "ढकालजीको लेखनले पाठकलाई पहिलो पृष्ठबाट अन्तिम पृष्ठसम्म बाँधेर राख्न सक्छ। उहाँका उपन्यासहरूमा कथाको प्रवाह र पात्रहरूको जीवन्तता अत्यन्तै सराहनीय छ। उहाँको लेखनबाट मैले धेरै कुरा सिक्ने अवसर पाएको छु।",
+    Name: "श्रीमती सिता पोखरेल",
+    Post: "Reader",
     ImageName: "ghanendra.JPG",
   },
   {
     id: 3,
     Testimonial:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
-    Name: "Mr. Sam Altman",
-    Post: "Someone Big",
+      "घनेन्द्र पुरुष ढकालका लेखनमा मानव मनको गहिराइ र समाजका विभिन्न पाटाहरूको सूक्ष्म अध्ययन पाइन्छ। उहाँको लेखनले हरेक पटक नयाँ दृष्टिकोण र विचार प्रस्तुत गर्छ। नेपाली साहित्यमा उहाँको योगदान अमूल्य छ।",
+    Name: "श्री कुमार थापा:",
+    Post: "Reader",
     ImageName: "ghanendra.JPG",
   },
   {
     id: 4,
     Testimonial:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
-    Name: "Mr. Sam Altman",
-    Post: "Someone Big",
+      "ढकाल सरका कविताहरूमा शब्दको जादू छ। उहाँका रचनाहरूले हृदयको अन्त्यसम्म छुन्छन् र गहिरो छाप छोड्छन्। उहाँको लेखनमा प्रकृति, प्रेम, र जीवनको सुन्दरतालाई अत्यन्तै कलात्मक ढंगले प्रस्तुत गरिएको छ।",
+    Name: "श्रीमती रञ्जना कार्की",
+    Post: "Reader",
     ImageName: "ghanendra.JPG",
   },
   {
     id: 5,
     Testimonial:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
-    Name: "Mr. Sam Altman",
-    Post: "Someone Big",
+      "घनेन्द्र पुरुष ढकालको लेखनले मेरो मनमा सदैव एक विशेष स्थान पाएको छ। उहाँका कथाहरूले मलाई सोच्न बाध्य पार्छन् र जीवनलाई नयाँ दृष्टिकोणबाट हेर्न सिकाउँछन्। उहाँको लेखनले मलाई सधैं प्रेरणा र उर्जा दिन्छ।",
+    Name: "श्री रमेश अधिकारी",
+    Post: "Reader",
     ImageName: "ghanendra.JPG",
   },
 ];

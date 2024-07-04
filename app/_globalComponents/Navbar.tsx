@@ -226,9 +226,11 @@ const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </li>
-        <li className="hover:text-orange-secondary transition cursor-pointer">
-          Blogs
-        </li>
+        <Link href={"/podcasts"}>
+          <li className="hover:text-orange-secondary transition cursor-pointer">
+            Podcasts
+          </li>
+        </Link>
         <li className="hover:text-orange-secondary transition cursor-pointer">
           Media
         </li>

@@ -1,10 +1,8 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
-import Scene from "./BookModel";
 import Cube from "./Cube";
-import Particles from "./Particles";
+
 export default function HeroSection() {
   return (
     <main className=" bg-opacity-10 bg-[rgb(153,255,250)]  bg-no-repeat relative bg-cover ml-0 min-h-screen w-screen flex flex-col md:flex-row  ">
@@ -32,9 +30,11 @@ export default function HeroSection() {
               Books
             </button>
           </Link>
-          <button className="w-32 h-22 p-3 rounded-lg  transition bg-faded-light font-semibold  border ">
-            Blogs
-          </button>
+          <Link href={"/podcasts"}>
+            <button className="w-32 h-22 p-3 rounded-lg  transition bg-faded-light font-semibold  border ">
+              Podcasts
+            </button>
+          </Link>
         </div>
       </div>
 
