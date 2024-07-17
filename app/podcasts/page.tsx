@@ -5,29 +5,84 @@ const page = () => {
   const interviewData = [
     {
       id: 1,
-      title: "Talk Show Ghanendra Purush Dhakal Part 1",
-      src: "https://youtube.com/embed/1d48ZUIgagk",
-      date: " Sep 7, 2012",
+      title:
+        "गणेशमान सिंहको संकल्प !l Ganesh Man Singh Foundation #lauhapurush #ganeshmansigh #nepalpolitics",
+      src: "https://youtube.com/embed/uOb-PNhMuXk",
+      date: "Apr 10, 2024",
     },
     {
       id: 2,
-      title: "Ep 29 Talk Show Ghanendra Purush Dhakal Part 2",
-      src: "https://youtube.com/embed/zd7cyEzvDJY",
+      title:
+        "गणेशमान सिंहको संकल्प भाग १ l Ganesh Man Singh Foundation #lauhapurush #ganeshmansigh",
+      src: "https://youtube.com/embed/Sp0Vm0MYaJA",
       date: "Sep 7, 2012",
     },
 
     {
       id: 3,
-      title: "The Life and Values of Ganesh Man Singh",
-      src: "https://youtube.com/embed/8VBAHBjq7ig",
-      date: "  Nov 19, 2023 ",
+      title: "गणेशमान सिंहको संकल्प भाग २ l Ganesh Man Singh Foundation",
+      src: "https://youtube.com/embed/Tw03yqFtEuM",
+      date: "Apr 22, 2024",
     },
     {
       id: 4,
+      title: "गणेशमान सिंहको संकल्प भाग ३ l Ganesh Man Singh Foundation",
+      src: "https://youtube.com/embed/xpGyyr-pOtE",
+      date: "  Apr 29, 2024  ",
+    },
+    {
+      id: 5,
+      title: "गणेशमान सिंहको संकल्प भाग ३ l Ganesh Man Singh Foundation",
+      src: "https://youtube.com/embed/xpGyyr-pOtE",
+      date: " Apr 29, 2024",
+    },
+    {
+      id: 6,
       title:
-        "गणेशमान सिंहले सोचेजस्तो काङ्ग्रेस बन्न सकेन | घनेन्द्रपुरुष ढकाल, लेखक तथा विश्लेषक",
-      src: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fomkartv%2Fvideos%2F2498240423656578%2F&show_text=false&width=560&t=0",
-      date: " April 23, 2023 ",
+        "गणेशमान सिंहको संकल्प भाग ५ l Ganesh Man Singh Foundation l Ghanendra Purush Dhakal l",
+      src: "https://youtube.com/embed/0082tbw8BmI",
+      date: " May 20, 2024  ",
+    },
+    {
+      id: 7,
+      title: "गणेशमान सिंहको संकल्प भाग ४ l Ganesh Man Singh Foundation",
+      src: "https://youtube.com/embed/aQbt21zLzpQ",
+      date: " Jun 10, 2024 ",
+    },
+    {
+      id: 8,
+      title:
+        "गणेशमान सिंहको संकल्प भाग ८ l Ganesh Man Singh Foundation ft. Ghanendra Purush Dhakal",
+      src: "https://youtube.com/embed/7pfPQxkbzO4",
+      date: "Jun 10, 2024  ",
+    },
+    {
+      id: 9,
+      title:
+        "गणेशमान सिंहको संकल्प भाग ९ l Ganesh Man Singh Foundation ft. Ghanendra Purush Dhakal",
+      src: "https://youtube.com/embed/-6rIVHIPcaE",
+      date: "  Jun 17 2024  ",
+    },
+    {
+      id: 10,
+      title:
+        "गणेशमान सिंहको संकल्प भाग १० l Ganesh Man Singh Foundation ft. Ghanendra Purush Dhakal",
+      src: "https://youtube.com/embed/gipQQmqU09Q",
+      date: "  Jun 24, 2024  ",
+    },
+    {
+      id: 11,
+      title:
+        "गणेशमान सिंहको संकल्प भाग ११ l Ganesh Man Singh Foundation ft. Ghanendra Purush Dhakal",
+      src: "https://youtube.com/embed/CyL-pYm273s",
+      date: "  Jul 2, 2024    ",
+    },
+    {
+      id: 12,
+      title:
+        "गणेशमान सिंहको संकल्प भाग १२ l Ganesh Man Singh Foundation ft. Ghanendra Purush Dhakal",
+      src: "https://youtube.com/embed/ARJP4AE3gk8",
+      date: "  Jul 2, 2024    ",
     },
   ];
 
