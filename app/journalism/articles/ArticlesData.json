@@ -1,86 +1,386 @@
 [
   {
     "id": 1,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article1.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article1.jpg"
   },
   {
     "id": 2,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article2.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article2.jpg"
   },
   {
     "id": 3,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article3.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article3.jpg"
   },
   {
     "id": 4,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article4.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article4.jpg"
   },
   {
     "id": 5,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article5.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article5.jpg"
   },
   {
     "id": 6,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article6.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article6.jpg"
   },
   {
     "id": 7,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article7.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article7.jpg"
   },
   {
     "id": 8,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article8.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article8.jpg"
   },
   {
     "id": 9,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article9.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article9.jpg"
   },
   {
     "id": 10,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article10.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article10.jpg"
   },
   {
     "id": 11,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article69.jpg",
-    "date": "23rd February 2024"
+    "imageSource": "/assets/files/Article11.jpg"
   },
   {
-    "id": 11,
-    "title": "Article Title",
-    "url": "https://ganeshmansinghfoundation.org/autobiographyseries/peoples-movement-1990-struggle-for-democracy/",
-    "imageSource": "/assets/files/Article32.jpg",
-    "date": "23rd February 2024"
+    "id": 12,
+    "imageSource": "/assets/files/Article12.jpg"
+  },
+  {
+    "id": 13,
+    "imageSource": "/assets/files/Article13.jpg"
+  },
+  {
+    "id": 14,
+    "imageSource": "/assets/files/Article14.jpg"
+  },
+  {
+    "id": 15,
+    "imageSource": "/assets/files/Article15.jpg"
+  },
+  {
+    "id": 16,
+    "imageSource": "/assets/files/Article16.jpg"
+  },
+  {
+    "id": 17,
+    "imageSource": "/assets/files/Article17.jpg"
+  },
+  {
+    "id": 18,
+    "imageSource": "/assets/files/Article18.jpg"
+  },
+  {
+    "id": 19,
+    "imageSource": "/assets/files/Article19.jpg"
+  },
+  {
+    "id": 20,
+    "imageSource": "/assets/files/Article20.jpg"
+  },
+  {
+    "id": 21,
+    "imageSource": "/assets/files/Article21.jpg"
+  },
+  {
+    "id": 22,
+    "imageSource": "/assets/files/Article22.jpg"
+  },
+  {
+    "id": 23,
+    "imageSource": "/assets/files/Article23.jpg"
+  },
+  {
+    "id": 24,
+    "imageSource": "/assets/files/Article24.jpg"
+  },
+  {
+    "id": 25,
+    "imageSource": "/assets/files/Article25.jpg"
+  },
+  {
+    "id": 26,
+    "imageSource": "/assets/files/Article26.jpg"
+  },
+  {
+    "id": 27,
+    "imageSource": "/assets/files/Article27.jpg"
+  },
+  {
+    "id": 28,
+    "imageSource": "/assets/files/Article28.jpg"
+  },
+  {
+    "id": 29,
+    "imageSource": "/assets/files/Article29.jpg"
+  },
+  {
+    "id": 30,
+    "imageSource": "/assets/files/Article30.jpg"
+  },
+  {
+    "id": 31,
+    "imageSource": "/assets/files/Article31.jpg"
+  },
+  {
+    "id": 32,
+    "imageSource": "/assets/files/Article32.jpg"
+  },
+  {
+    "id": 33,
+    "imageSource": "/assets/files/Article33.jpg"
+  },
+  {
+    "id": 34,
+    "imageSource": "/assets/files/Article34.jpg"
+  },
+  {
+    "id": 35,
+    "imageSource": "/assets/files/Article35.jpg"
+  },
+  {
+    "id": 36,
+    "imageSource": "/assets/files/Article36.jpg"
+  },
+  {
+    "id": 37,
+    "imageSource": "/assets/files/Article37.jpg"
+  },
+  {
+    "id": 38,
+    "imageSource": "/assets/files/Article38.jpg"
+  },
+  {
+    "id": 39,
+    "imageSource": "/assets/files/Article39.jpg"
+  },
+  {
+    "id": 40,
+    "imageSource": "/assets/files/Article40.jpg"
+  },
+  {
+    "id": 41,
+    "imageSource": "/assets/files/Article41.jpg"
+  },
+  {
+    "id": 42,
+    "imageSource": "/assets/files/Article42.jpg"
+  },
+  {
+    "id": 43,
+    "imageSource": "/assets/files/Article43.jpg"
+  },
+  {
+    "id": 44,
+    "imageSource": "/assets/files/Article44.jpg"
+  },
+  {
+    "id": 45,
+    "imageSource": "/assets/files/Article45.jpg"
+  },
+  {
+    "id": 46,
+    "imageSource": "/assets/files/Article46.jpg"
+  },
+  {
+    "id": 47,
+    "imageSource": "/assets/files/Article47.jpg"
+  },
+  {
+    "id": 48,
+    "imageSource": "/assets/files/Article48.jpg"
+  },
+  {
+    "id": 49,
+    "imageSource": "/assets/files/Article49.jpg"
+  },
+  {
+    "id": 50,
+    "imageSource": "/assets/files/Article50.jpg"
+  },
+  {
+    "id": 51,
+    "imageSource": "/assets/files/Article51.jpg"
+  },
+  {
+    "id": 52,
+    "imageSource": "/assets/files/Article52.jpg"
+  },
+  {
+    "id": 53,
+    "imageSource": "/assets/files/Article53.jpg"
+  },
+  {
+    "id": 54,
+    "imageSource": "/assets/files/Article54.jpg"
+  },
+  {
+    "id": 55,
+    "imageSource": "/assets/files/Article55.jpg"
+  },
+  {
+    "id": 56,
+    "imageSource": "/assets/files/Article56.jpg"
+  },
+  {
+    "id": 57,
+    "imageSource": "/assets/files/Article57.jpg"
+  },
+  {
+    "id": 58,
+    "imageSource": "/assets/files/Article58.jpg"
+  },
+  {
+    "id": 59,
+    "imageSource": "/assets/files/Article59.jpg"
+  },
+  {
+    "id": 60,
+    "imageSource": "/assets/files/Article60.jpg"
+  },
+  {
+    "id": 61,
+    "imageSource": "/assets/files/Article61.jpg"
+  },
+  {
+    "id": 62,
+    "imageSource": "/assets/files/Article62.jpg"
+  },
+  {
+    "id": 63,
+    "imageSource": "/assets/files/Article63.jpg"
+  },
+  {
+    "id": 64,
+    "imageSource": "/assets/files/Article64.jpg"
+  },
+  {
+    "id": 65,
+    "imageSource": "/assets/files/Article65.jpg"
+  },
+  {
+    "id": 66,
+    "imageSource": "/assets/files/Article66.jpg"
+  },
+  {
+    "id": 67,
+    "imageSource": "/assets/files/Article67.jpg"
+  },
+  {
+    "id": 68,
+    "imageSource": "/assets/files/Article68.jpg"
+  },
+  {
+    "id": 69,
+    "imageSource": "/assets/files/Article69.jpg"
+  },
+  {
+    "id": 70,
+    "imageSource": "/assets/files/Article70.jpg"
+  },
+  {
+    "id": 71,
+    "imageSource": "/assets/files/Article71.jpg"
+  },
+  {
+    "id": 72,
+    "imageSource": "/assets/files/Article72.jpg"
+  },
+  {
+    "id": 73,
+    "imageSource": "/assets/files/Article73.jpg"
+  },
+  {
+    "id": 74,
+    "imageSource": "/assets/files/Article74.jpg"
+  },
+  {
+    "id": 75,
+    "imageSource": "/assets/files/Article75.jpg"
+  },
+  {
+    "id": 76,
+    "imageSource": "/assets/files/Article76.jpg"
+  },
+  {
+    "id": 77,
+    "imageSource": "/assets/files/Article77.jpg"
+  },
+  {
+    "id": 78,
+    "imageSource": "/assets/files/Article78.jpg"
+  },
+  {
+    "id": 79,
+    "imageSource": "/assets/files/Article79.jpg"
+  },
+  {
+    "id": 80,
+    "imageSource": "/assets/files/Article80.jpg"
+  },
+  {
+    "id": 81,
+    "imageSource": "/assets/files/Article81.jpg"
+  },
+  {
+    "id": 82,
+    "imageSource": "/assets/files/Article82.jpg"
+  },
+  {
+    "id": 83,
+    "imageSource": "/assets/files/Article83.jpg"
+  },
+  {
+    "id": 84,
+    "imageSource": "/assets/files/Article84.jpg"
+  },
+  {
+    "id": 85,
+    "imageSource": "/assets/files/Article85.jpg"
+  },
+  {
+    "id": 86,
+    "imageSource": "/assets/files/Article86.jpg"
+  },
+  {
+    "id": 87,
+    "imageSource": "/assets/files/Article87.jpg"
+  },
+  {
+    "id": 88,
+    "imageSource": "/assets/files/Article88.jpg"
+  },
+  {
+    "id": 89,
+    "imageSource": "/assets/files/Article89.jpg"
+  },
+  {
+    "id": 90,
+    "imageSource": "/assets/files/Article90.jpg"
+  },
+  {
+    "id": 91,
+    "imageSource": "/assets/files/Article91.jpg"
+  },
+  {
+    "id": 92,
+    "imageSource": "/assets/files/Article92.jpg"
+  },
+  {
+    "id": 93,
+    "imageSource": "/assets/files/Article93.jpg"
+  },
+  {
+    "id": 94,
+    "imageSource": "/assets/files/Article94.jpg"
+  },
+  {
+    "id": 95,
+    "imageSource": "/assets/files/Article95.jpg"
+  },
+  {
+    "id": 96,
+    "imageSource": "/assets/files/Article96.jpg"
   }
 ]
